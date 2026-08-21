@@ -1,6 +1,0 @@
-wfdb
-py-ecg-detectors
-numpy
-scipy
-pandas
-matplotlib

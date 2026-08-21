@@ -1,8 +1,8 @@
-# Final Validation Report
+# ECG-to-RR Validation Report
 
 ## Status
 
-Classification: GREEN for Reviewer II Point 1 detection-performance readiness. Firmware-equivalent replay demonstrates strong MIT-BIH performance broadly comparable to Hamilton. The corrected runtime benchmark now uses the exact firmware-equivalent host replay rather than the earlier library Pan-Tompkins validation implementation. Physical ESP32 runtime remains unmeasured and is not claimed.
+Classification: GREEN for ECG-to-RR detection-performance readiness. Firmware-equivalent replay demonstrates strong MIT-BIH performance broadly comparable to Hamilton. The runtime benchmark uses the exact firmware-equivalent host replay rather than the earlier library Pan-Tompkins validation implementation. Physical ESP32 runtime remains unmeasured and is not claimed.
 
 ## Main Result
 
@@ -24,4 +24,4 @@ record,f1,sensitivity,ppv,TP,FP,FN
 
 ## Integrity Statement
 
-No MIT-BIH-driven parameter tuning was performed. Accuracy values were not changed during the runtime provenance correction. The final reported values are based on a firmware-equivalent host replay of the current ESP32 detector port and an independent Hamilton comparator evaluated under the same matching protocol.
+No MIT-BIH-driven parameter tuning was performed. Accuracy values were not changed during the runtime provenance correction. The reported values are based on a firmware-equivalent host replay of the current ESP32 detector port and an independent Hamilton comparator evaluated under the same matching protocol.

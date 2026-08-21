@@ -1,16 +1,16 @@
 # Firmware Validation Parity
 
-The public release uses the Reviewer-2 final firmware route as the authoritative embedded ECG-to-RR implementation for manuscript validation:
+The evidence-bearing embedded ECG-to-RR implementation is organized as:
 
-- Firmware source: `firmware/reviewer2_final/main.cpp`
-- Host replay: `reviewer2_rpeak_final/run_firmware_equivalence_check.py`
-- Final validation outputs: `reviewer2_rpeak_final/aggregate_results.csv` and `reviewer2_rpeak_final/record_level_results.csv`
+- Firmware source: `firmware/esp32_ecg_rr/main.cpp`
+- Host replay: `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py`
+- Validation outputs: `validation/ecg_rpeak/ecg_to_rr_benchmark_summary.csv` and `validation/ecg_rpeak/ecg_to_rr_record_level_results.csv`
 
-The older development sketch from the workspace root (`src/main.cpp` with display-coupled adaptive threshold logic) is intentionally not included in this public release candidate and is not evidence-bearing for the revised manuscript.
+The older development sketch from the workspace root (`src/main.cpp` with display-coupled adaptive threshold logic) is intentionally not included in this public repository and is not evidence-bearing for the manuscript.
 
 ## Component Comparison
 
-| Component | Reviewer-2 final ESP32 firmware | Host validation replay | Equivalent? | Notes |
+| Component | ESP32 firmware | Host validation replay | Equivalent? | Notes |
 |---|---|---|---|---|
 | Sampling frequency | 250 Hz, `SAMPLE_PERIOD_US = 4000`, `FS_HZ = 250` | `mitval.FS_TARGET = 250`; one replay update per 250-Hz sample | Yes | MIT-BIH ECG is resampled from 360 Hz to 250 Hz before replay. |
 | Preprocessing/filter chain | Causal second-order IIR: `0.11216024*x[n] - 0.11216024*x[n-2] + 1.73356294*y[n-1] - 0.77567951*y[n-2]` | Same difference equation in `FirmwarePanTompkinsReplay.update()` | Yes | Host uses Python floats; firmware uses `float`. |
@@ -26,15 +26,12 @@ The older development sketch from the workspace root (`src/main.cpp` with displa
 | Peak localization | Detection timestamp is the MWI peak sample index | Same | Yes | No additional local ECG-amplitude refinement is applied. |
 | Timing conversion | `detectedMs = (1000 * qrsIndex) / FS_HZ` using integer division | Same | Yes | Host uses integer floor division before RR filtering. |
 | RR calculation | Difference between successive detected timestamps | Same | Yes | First detection initializes state and is not emitted as RR. |
-| Physiologic RR limits | Emit only `250 <= rr_ms <= 2200` | Same | Yes | This is the validation route used for final manuscript metrics. |
+| Physiologic RR limits | Emit only `250 <= rr_ms <= 2200` | Same | Yes | This is the route used for manuscript ECG-to-RR metrics. |
 | State reset | One detector instance per record/replay | Same | Yes | Validation resets state between MIT-BIH records. |
 | Numerical precision | Firmware `float` | Python float | Equivalent with minor numerical differences possible | No evidence that these minor precision differences alter the reported host-replay validation because the host replay is the evidence-bearing algorithm-level implementation. |
 
 ## Empirical Evidence
 
-`reviewer2_rpeak_final/run_firmware_equivalence_check.py` implements a line-by-line host replay of `firmware/reviewer2_final/main.cpp`. The final MIT-BIH validation and corrected runtime provenance use this host replay, not `py-ecg-detectors.pan_tompkins_detector`.
+`validation/ecg_rpeak/run_ecg_to_rr_benchmark.py` implements a line-by-line host replay of `firmware/esp32_ecg_rr/main.cpp`. The MIT-BIH validation and controlled offline runtime benchmark use this host replay, not `py-ecg-detectors.pan_tompkins_detector`.
 
-The validation is therefore classified as **confirmed equivalent for the Reviewer-2 final firmware/replay pair used in the public release candidate**. It should be described as a host-side implementation reproducing the deployed Reviewer-2 final firmware detector logic for offline validation.
-
-This does not mean that MIT-BIH ECG physically passed through an AD8232/ESP32 device, and it does not validate the complete analog hardware chain.
-
+This means the repository validates a host-side implementation reproducing the deployed firmware detector logic for offline replay. It does not mean that MIT-BIH ECG physically passed through an AD8232/ESP32 device, and it does not validate the complete analog hardware chain.

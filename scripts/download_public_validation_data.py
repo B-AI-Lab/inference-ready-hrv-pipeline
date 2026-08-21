@@ -28,8 +28,8 @@ NSTDB_RECORDS = [
 
 
 def main() -> None:
-    mitdb_dir = ROOT / "reviewer2_rpeak_validation" / "data" / "mitdb"
-    nstdb_dir = ROOT / "reviewer2_signal_quality_validation" / "data" / "nstdb"
+    mitdb_dir = ROOT / "validation" / "ecg_rpeak" / "data" / "mitdb"
+    nstdb_dir = ROOT / "validation" / "signal_quality" / "data" / "nstdb"
     mitdb_dir.mkdir(parents=True, exist_ok=True)
     nstdb_dir.mkdir(parents=True, exist_ok=True)
 
@@ -41,4 +41,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

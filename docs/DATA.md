@@ -2,7 +2,7 @@
 
 ## Public Validation Data
 
-The release candidate does not vendor PhysioNet waveform files. The Reviewer-2 validation scripts expect public datasets in local `data/` directories and can be populated with:
+The repository does not vendor PhysioNet waveform files. The validation scripts expect public datasets in ignored local `validation/*/data/` directories and can be populated with:
 
 ```bash
 python3 scripts/download_public_validation_data.py
@@ -23,5 +23,4 @@ Live BLE exports may include subject IDs, display names, BLE MAC addresses, loca
 
 ## Excluded Local Data
 
-The development-workspace folders `hrv_benchmark_exports/` and `hrv_validation_exports/` were excluded from the public release candidate because their provenance was not established from scripts, metadata, or logs. They are not used for manuscript validation claims.
-
+The development-workspace folders `hrv_benchmark_exports/` and `hrv_validation_exports/` were excluded from the public repository because their provenance was not established from scripts, metadata, or logs. They are not used for manuscript validation claims.

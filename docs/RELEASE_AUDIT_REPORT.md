@@ -1,73 +1,54 @@
 # Release Audit Report
 
-## Supersession Note
+## Scope
 
-This repository-hygiene audit is superseded for scientific readiness by
-`docs/IMPLEMENTATION_CORRECTNESS.md`. That later implementation audit identified
-respiration-proxy and zero-power spectral boundary issues. A follow-up correction
-added validity gating for negligible spectra, lower-bound leakage, and selected
-upper-band alias cases. The output remains an experimental RR-derived spectral
-proxy and should not be described as measured respiration or as a fully
-anti-aliased respiratory-rate estimator.
+This report summarizes the public repository hygiene audit for the HRV inference-ready data pipeline. Scientific algorithms, validation metrics, and evidence-bearing numerical outputs are documented separately in [VALIDATION.md](VALIDATION.md) and [IMPLEMENTATION_CORRECTNESS.md](IMPLEMENTATION_CORRECTNESS.md).
 
-## A. Changes Made
+## Included Public Material
 
-- Created a curated public release candidate under `hrv-pipeline-public/`.
-- Added public-facing README, MIT license, citation metadata, requirements files, ignore rules, and validation data download helper.
-- Copied production HRV engine and bridge sources.
-- Copied the HRV-only dashboard subset and removed EEG/hemodynamic tab imports from the public-candidate dashboard shell.
-- Copied Reviewer-2 final ECG-to-RR and RR-stream quality validation scripts, outputs, tables, and figures while excluding raw datasets and superseded archives.
-- Added documentation for architecture, validation traceability, firmware parity, data/privacy, and release exclusions.
+- Production HRV processing engine and live bridge sources.
+- HRV-only dashboard source for monitoring, event annotation, and export.
+- ESP32 ECG-to-RR firmware source under `firmware/esp32_ecg_rr/`.
+- External ECG-to-RR benchmark scripts, tables, figures, and runtime artifacts under `validation/ecg_rpeak/`.
+- Controlled signal-quality benchmark scripts, tables, figures, and runtime artifacts under `validation/signal_quality/`.
+- Downstream RR-interface regression under `validation/downstream/`.
+- Public validation-data downloader and requirements files.
+- Documentation for architecture, validation traceability, firmware parity, data/privacy, and release exclusions.
 
-## B. Repository Exclusions
+## Excluded Material
 
-See `docs/PUBLIC_RELEASE_EXCLUSIONS.md`.
+See [PUBLIC_RELEASE_EXCLUSIONS.md](PUBLIC_RELEASE_EXCLUSIONS.md). Raw PhysioNet datasets, participant-level recordings, local exports, caches, build products, development-only firmware sketches, and obsolete manuscript drafts are not part of the public repository.
 
-## C. Manuscript-Code Consistency
+## Manuscript-Code Consistency
 
-The Reviewer-2 final ECG-to-RR and RR-stream quality validation outputs in the release candidate are consistent with `MG_npjDM_rev_clean_of.docx` for the externally validated results:
+The public validation outputs are consistent with the manuscript-facing externally validated results:
 
 - Firmware-equivalent ECG-to-RR F1 0.9851.
-- Hamilton F1 0.9844.
+- Hamilton comparator F1 0.9844.
 - Firmware-equivalent controlled offline runtime 0.3146 s per approximately 30-min MIT-BIH record.
 - Signal Confidence AUROC/AUPRC 0.754/0.545.
 - Orphanidou AUROC/AUPRC 0.662/0.336.
 - Signal Status balanced accuracy/MCC 0.727/0.446.
 - Orphanidou balanced accuracy/MCC 0.632/0.341.
 
-Downstream synthetic validation and latency values are described in the manuscript, but I did not identify a complete public reproduction package for those numerical tables in the current workspace. They are therefore not re-reported in `docs/VALIDATION.md` as independently reproducible repository results.
+Participant-level feasibility data and private operational exports are not distributed.
 
-## D. Firmware Parity Conclusion
+## Firmware Parity Conclusion
 
-Classification: **source-level equivalent with caveat** for the Reviewer-2 final firmware source copied to `firmware/reviewer2_final/main.cpp` and the host replay in `reviewer2_rpeak_final/run_firmware_equivalence_check.py`. The later implementation-correctness audit clarifies that direct compiled C++/ESP32 output parity on identical ECG input remains an unperformed fixture.
+The firmware source in `firmware/esp32_ecg_rr/main.cpp` and the host replay in `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py` are source-level equivalent for the documented offline replay semantics. Direct compiled C++/ESP32 output parity on identical ECG input remains an unperformed hardware fixture.
 
-The older root development firmware was excluded from the public candidate and is not used for manuscript evidence.
+## Respiratory Proxy Conclusion
 
-## E. Respiratory Proxy Conclusion
+The public code keeps one production physiological/spectral definition in `HRVConfig` in `hrv_live_processing_engine.py`. The production engine withholds LF/HF and respiration-proxy output when the detrended RR spectrum has negligible variability, and it reports a respiration proxy only when the dominant supported diagnostic-band peak is inside the reliable RR-derived proxy range.
 
-The public candidate keeps one production physiological/spectral definition in `HRVConfig` in `hrv_live_processing_engine.py`. The standalone `hrv_viz.py` inspector was excluded because it independently redefined spectral and respiration-proxy constants and was not part of manuscript reproduction.
+The public documentation uses "RR-derived respiration proxy" and explicitly states that it is not measured airflow, thoracic movement, or ventilation.
 
-The production engine now withholds LF/HF and respiration-proxy output when the detrended RR spectrum has negligible variability, and it reports a respiration proxy only when the dominant supported diagnostic-band peak is inside the reliable RR-derived proxy range. The public docs use "RR-derived respiration proxy" and explicitly state that it is not measured airflow, thoracic movement, or ventilation.
+## Remaining Author Decisions
 
-## F. Reviewer-2 Validation Provenance
+- Add a public reproduction package for any additional manuscript analyses if those values should be independently reproducible from this repository.
+- Add DOI, repository URL, release date, and version to `CITATION.cff` when assigned and verified.
+- Review dashboard dependency security before archival release. `xlsx` currently has no npm audit fix available, so replacing or constraining spreadsheet export dependencies requires an explicit dependency decision.
 
-See `docs/VALIDATION.md` for exact source/output/command mapping.
+## Readiness
 
-## G. Remaining Author Decisions
-
-- Decide whether to add a public reproduction package for the manuscript's synthetic downstream validation and latency benchmarking values.
-- Add final DOI, repository URL, release date, and version to `CITATION.cff` when assigned.
-- Confirm institutional approval for MIT licensing before public release.
-- Review dashboard dependency security before release. `npm audit --omit=dev --audit-level=high` reported advisories in build tooling dependencies and `xlsx`; `xlsx` currently has no npm audit fix available, so replacing or constraining spreadsheet export dependencies requires an explicit dependency decision.
-
-## H. Public-Release Readiness
-
-**READY AFTER MANUSCRIPT WORDING UPDATE**
-
-The Reviewer-2 validation-facing release candidate is internally consistent and
-excludes the known risky legacy/private material. The respiration-proxy
-zero-power and audited 0.05/0.55-Hz boundary failures have been corrected for
-the deterministic regression cases. Public release should wait until the
-manuscript wording explicitly describes the proxy validity gate and avoids any
-claim that the RR-derived proxy is a direct or fully anti-aliased respiration
-measure.
+The public repository is organized for external use and excludes the known risky legacy/private material. Scientific limitations remain documented in the README and validation documentation.

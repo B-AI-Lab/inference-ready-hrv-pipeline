@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Correct runtime provenance and rebuild final Point 1 runtime artifacts.
+"""Benchmark ECG-to-RR runtime and rebuild publication-facing runtime artifacts.
 
-This script intentionally preserves the already finalized detector-accuracy
-outputs. It only replaces runtime-dependent tables, text, and figure artifacts.
+This script intentionally preserves detector-accuracy outputs. It only replaces
+runtime-dependent tables, text, and figure artifacts.
 """
 
 from __future__ import annotations
@@ -28,10 +28,9 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
-PROJECT = ROOT.parent
-VALIDATION = PROJECT / "reviewer2_rpeak_validation"
+VALIDATION = ROOT
 FIG_DIR = ROOT / "figures"
-ARCHIVE = ROOT / "archive_pre_runtime_provenance_correction"
+ARCHIVE = ROOT / "_runtime_benchmark_archive"
 
 RUNTIME_REPS = 7
 FW_NAME = "Embedded Pan-Tompkins firmware replay"
@@ -70,25 +69,24 @@ def load_module(name: str, path: Path):
     return mod
 
 
-mitval = load_module("mitval_runtime_correction", VALIDATION / "run_mitbih_validation.py")
-fwcheck = load_module("firmware_runtime_correction", ROOT / "run_firmware_equivalence_check.py")
+mitval = load_module("mitval_runtime_benchmark", VALIDATION / "mitbih_validation.py")
+fwcheck = load_module("firmware_runtime_benchmark", ROOT / "run_ecg_to_rr_benchmark.py")
 
 
 def archive_previous_outputs() -> None:
     ARCHIVE.mkdir(exist_ok=True)
     paths = [
-        ROOT / "runtime_results_offline.csv",
-        ROOT / "aggregate_results.csv",
-        ROOT / "supplementary_validation_table.csv",
-        ROOT / "supplementary_validation_table.md",
-        ROOT / "figure_validation_source_data.csv",
-        ROOT / "figure_validation_caption.md",
-        ROOT / "reviewer2_point1_final_response.md",
-        ROOT / "results_insert.md",
-        ROOT / "final_validation_report.md",
-        FIG_DIR / "supplementary_revised_qrs_validation.pdf",
-        FIG_DIR / "supplementary_revised_qrs_validation.png",
-        FIG_DIR / "supplementary_revised_qrs_validation.svg",
+        ROOT / "ecg_to_rr_runtime_results.csv",
+        ROOT / "ecg_to_rr_benchmark_summary.csv",
+        ROOT / "ecg_to_rr_supplementary_table.csv",
+        ROOT / "ecg_to_rr_supplementary_table.md",
+        ROOT / "ecg_to_rr_figure_source_data.csv",
+        ROOT / "ecg_to_rr_figure_caption.md",
+        ROOT / "manuscript_results_text.md",
+        ROOT / "ecg_to_rr_validation_report.md",
+        FIG_DIR / "supplementary_ecg_to_rr_validation.pdf",
+        FIG_DIR / "supplementary_ecg_to_rr_validation.png",
+        FIG_DIR / "supplementary_ecg_to_rr_validation.svg",
     ]
     for path in paths:
         if path.exists():
@@ -221,8 +219,8 @@ def verify_accuracy_unchanged(records: list[dict[str, object]]) -> pd.DataFrame:
     return recomputed
 
 
-def update_aggregate_results(runtime_sum: pd.DataFrame) -> None:
-    agg = pd.read_csv(ROOT / "aggregate_results.csv")
+def update_benchmark_summary(runtime_sum: pd.DataFrame) -> None:
+    agg = pd.read_csv(ROOT / "ecg_to_rr_benchmark_summary.csv")
     for detector in [FW_NAME, HAM_NAME]:
         rt = runtime_sum[runtime_sum.detector == detector].iloc[0]
         mask = agg.detector == detector
@@ -230,11 +228,11 @@ def update_aggregate_results(runtime_sum: pd.DataFrame) -> None:
         agg.loc[mask, "iqr_runtime_s"] = rt.iqr_runtime_s
         agg.loc[mask, "median_ms_per_min_ecg"] = rt.median_ms_per_min_ecg
         agg.loc[mask, "median_realtime_factor"] = rt.median_realtime_factor
-    agg.to_csv(ROOT / "aggregate_results.csv", index=False)
+    agg.to_csv(ROOT / "ecg_to_rr_benchmark_summary.csv", index=False)
 
 
 def write_supplementary_table(runtime_sum: pd.DataFrame) -> None:
-    agg = pd.read_csv(ROOT / "aggregate_results.csv")
+    agg = pd.read_csv(ROOT / "ecg_to_rr_benchmark_summary.csv")
     rows = []
     for detector, source in [
         (FW_NAME, "controlled offline execution time of the firmware-equivalent implementation"),
@@ -261,7 +259,7 @@ def write_supplementary_table(runtime_sum: pd.DataFrame) -> None:
             }
         )
     table = pd.DataFrame(rows)
-    table.to_csv(ROOT / "supplementary_validation_table.csv", index=False)
+    table.to_csv(ROOT / "ecg_to_rr_supplementary_table.csv", index=False)
     md = table.copy()
     for col in ["Sensitivity", "PPV", "F1"]:
         md[col] = md[col].map(lambda x: f"{x:.4f}")
@@ -278,7 +276,7 @@ def write_supplementary_table(runtime_sum: pd.DataFrame) -> None:
         "| " + " | ".join(str(row[col]).ljust(widths[col]) for col in md.columns) + " |"
         for _, row in md.iterrows()
     ]
-    (ROOT / "supplementary_validation_table.md").write_text("\n".join([header, sep, *body]) + "\n")
+    (ROOT / "ecg_to_rr_supplementary_table.md").write_text("\n".join([header, sep, *body]) + "\n")
 
 
 def figure_source_data(
@@ -286,7 +284,7 @@ def figure_source_data(
     recomputed: pd.DataFrame,
     runtime_sum: pd.DataFrame,
 ) -> pd.DataFrame:
-    agg = pd.read_csv(ROOT / "aggregate_results.csv")
+    agg = pd.read_csv(ROOT / "ecg_to_rr_benchmark_summary.csv")
     timing_errors = pd.read_csv(ROOT / "_runtime_correction_timing_errors.tmp.csv")
     rows = []
     record_pivot = recomputed.pivot(index="record", columns="detector", values="f1").reset_index()
@@ -319,7 +317,7 @@ def figure_source_data(
 
     rows.extend(timing_errors.to_dict("records"))
     source = pd.DataFrame(rows)
-    source.to_csv(ROOT / "figure_validation_source_data.csv", index=False)
+    source.to_csv(ROOT / "ecg_to_rr_figure_source_data.csv", index=False)
     (ROOT / "_runtime_correction_timing_errors.tmp.csv").unlink(missing_ok=True)
     return source
 
@@ -344,7 +342,7 @@ def build_figure(recomputed: pd.DataFrame, runtime_sum: pd.DataFrame, source: pd
     colors = {FW_NAME: "#0072B2", HAM_NAME: "#D55E00", "expert": "#009E73", "ecg": "#2F2F2F"}
     fig, axes = plt.subplots(2, 3, figsize=(13.0, 7.6), constrained_layout=True)
     fig.suptitle(
-        "Supplementary Figure Sx | External expert-annotation validation and computational benchmarking of the revised embedded ECG-to-RR detection route",
+        "Supplementary Figure Sx | External expert-annotation validation and computational benchmarking of the embedded ECG-to-RR detection route",
         fontsize=12,
         fontweight="bold",
     )
@@ -369,7 +367,7 @@ def build_figure(recomputed: pd.DataFrame, runtime_sum: pd.DataFrame, source: pd
     labels = ["Sensitivity", "PPV", "F1"]
     x = np.arange(len(metrics))
     width = 0.34
-    agg = pd.read_csv(ROOT / "aggregate_results.csv")
+    agg = pd.read_csv(ROOT / "ecg_to_rr_benchmark_summary.csv")
     vals_fw = [float(agg[(agg.scope == "gross") & (agg.detector == FW_NAME)].iloc[0][m]) for m in metrics]
     vals_ham = [float(agg[(agg.scope == "gross") & (agg.detector == HAM_NAME)].iloc[0][m]) for m in metrics]
     b1 = ax.bar(x - width / 2, vals_fw, width, color=colors[FW_NAME], label="Firmware replay", edgecolor="#202020", linewidth=0.6)
@@ -462,7 +460,7 @@ def build_figure(recomputed: pd.DataFrame, runtime_sum: pd.DataFrame, source: pd
         ax.text(-0.12, 1.08, label, transform=ax.transAxes, fontsize=14, fontweight="bold", va="top")
         ax.grid(axis="y", color="#E6E6E6", lw=0.6)
 
-    out_base = FIG_DIR / "supplementary_revised_qrs_validation"
+    out_base = FIG_DIR / "supplementary_ecg_to_rr_validation"
     fig.savefig(out_base.with_suffix(".pdf"), bbox_inches="tight")
     fig.savefig(out_base.with_suffix(".svg"), bbox_inches="tight")
     fig.savefig(out_base.with_suffix(".png"), dpi=600, bbox_inches="tight")
@@ -470,10 +468,10 @@ def build_figure(recomputed: pd.DataFrame, runtime_sum: pd.DataFrame, source: pd
 
 
 def write_caption() -> None:
-    (ROOT / "figure_validation_caption.md").write_text(
-        "Supplementary Figure Sx | External expert-annotation validation and computational benchmarking of the revised embedded ECG-to-RR detection route. "
+    (ROOT / "ecg_to_rr_figure_caption.md").write_text(
+        "Supplementary Figure Sx | External expert-annotation validation and computational benchmarking of the embedded ECG-to-RR detection route. "
         "The figure summarizes external validation on the MIT-BIH Arrhythmia Database using all 48 records and 109,494 expert-annotated reference beats. "
-        "(A) Record-level F1 agreement between the final firmware-equivalent embedded Pan-Tompkins detector replay and the independent Hamilton comparator, with records 108, 228, 207, and 208 labelled. "
+        "(A) Record-level F1 agreement between the firmware-equivalent embedded Pan-Tompkins detector replay and the independent Hamilton comparator, with records 108, 228, 207, and 208 labelled. "
         "(B) Gross pooled sensitivity, positive predictivity, and F1 using fixed one-to-one +/-150-ms matching against expert annotations. "
         "(C) Empirical cumulative distributions of absolute matched-beat timing error; vertical markers show the firmware-equivalent median of 86.0 ms, Hamilton median of 61.6 ms, and the predefined +/-150-ms matching tolerance. "
         "(D) Controlled offline execution time measured after data loading using identical 250-Hz MIT-BIH inputs, one warm-up run, seven sequential timed repetitions per record and detector, no multiprocessing, and constrained numerical-library threading. "
@@ -487,27 +485,15 @@ def write_caption() -> None:
 def write_text_outputs(runtime_sum: pd.DataFrame) -> None:
     fw = runtime_sum[runtime_sum.detector == FW_NAME].iloc[0]
     ham = runtime_sum[runtime_sum.detector == HAM_NAME].iloc[0]
-    (ROOT / "reviewer2_point1_final_response.md").write_text(
-        f"""We thank the reviewer for raising this important point. The comment prompted us to reassess the original prototype R-peak detection component of the embedded ECG acquisition route and substantially strengthened the technical rigor and transparency of the revised manuscript.
-
-Rather than attempting to defend or tune an unvalidated proprietary detector, we replaced the prototype detector with an established Pan-Tompkins-based ECG-to-RR detection route and verified the final firmware-equivalent implementation directly. This change affects only the source-specific ECG-to-RR acquisition adapter. The downstream HRV processing engine, event annotation, baseline referencing, JSON/SSE serialization, dashboard, and export architecture remain unchanged.
-
-The revised route was externally benchmarked on all 48 MIT-BIH Arrhythmia Database records comprising {REF_BEATS:,} expert-reviewed reference beats. The evaluation used the same prespecified channel selection, 360-to-250 Hz resampling, expert annotation inclusion rules, and fixed one-to-one +/-150 ms matching rule for both detectors, with no MIT-BIH-driven parameter tuning. The final firmware-equivalent embedded Pan-Tompkins replay achieved sensitivity 0.9831, positive predictivity 0.9871, and F1 0.9851, with TP/FP/FN = 107,641/1,405/1,853 and median matched-beat timing error 86.0 ms. As an independent established comparator under the same protocol, Hamilton detection achieved sensitivity 0.9817, positive predictivity 0.9872, and F1 0.9844, with TP/FP/FN = 107,485/1,395/2,009.
-
-We also repeated the execution-time benchmark under matched controlled offline conditions using the exact firmware-equivalent host replay and the Hamilton comparator on the same 250-Hz signals after data loading. Each record and detector was run sequentially with one warm-up run and seven timed repetitions, without multiprocessing and with numerical-library threading constrained. The firmware-equivalent implementation required a median {fw.median_runtime_s:.4f} s per approximately 30-min MIT-BIH record (IQR {fw.iqr_runtime_s:.4f} s), corresponding to {fw.median_ms_per_min_ecg:.4f} ms/min ECG and a real-time factor of {fw.median_realtime_factor:.6f}. Hamilton required a median {ham.median_runtime_s:.4f} s per record (IQR {ham.iqr_runtime_s:.4f} s), corresponding to {ham.median_ms_per_min_ecg:.4f} ms/min ECG and a real-time factor of {ham.median_realtime_factor:.6f}. These values are controlled offline execution times, not physical ESP32 latency. The isolated ESP32 firmware variant built successfully for the ESP32 target.
-
-The real-world physician feasibility recordings reported in the manuscript were acquired independently using Polar H10 sensors and are therefore unaffected by this acquisition-adapter revision. We retain the scope limitation that the MIT-BIH benchmark validates the revised ECG-to-RR acquisition adapter under the tested conditions; it does not establish clinical diagnostic ECG validity of the complete AD8232/ESP32 hardware chain or clinical validity of the downstream HRV pipeline. We are grateful that the reviewer comment prompted this replacement and validation, which substantially strengthened the technical rigor and transparency of the revised manuscript.
-"""
+    (ROOT / "manuscript_results_text.md").write_text(
+        f"The firmware-equivalent replay of the embedded Pan-Tompkins-based detector was evaluated on all 48 MIT-BIH records ({REF_BEATS:,} expert-annotated reference beats) and achieved gross sensitivity 0.9831, positive predictivity 0.9871, and F1 0.9851, with median matched-beat timing error 86.0 ms. The Hamilton comparator achieved sensitivity 0.9817, positive predictivity 0.9872, and F1 0.9844 under identical evaluation conditions. Controlled offline execution time of the firmware-equivalent implementation was {fw.median_runtime_s:.4f} s per approximately 30-min record (IQR {fw.iqr_runtime_s:.4f} s; {fw.median_ms_per_min_ecg:.4f} ms/min ECG; real-time factor {fw.median_realtime_factor:.6f}); Hamilton required {ham.median_runtime_s:.4f} s per record (IQR {ham.iqr_runtime_s:.4f} s; {ham.median_ms_per_min_ecg:.4f} ms/min ECG; real-time factor {ham.median_realtime_factor:.6f}). These values are controlled offline execution times and do not represent physical ESP32 latency. Record-level details are provided in Supplementary Figure Sx and Supplementary Table Sx.\n"
     )
-    (ROOT / "results_insert.md").write_text(
-        f"The firmware-equivalent replay of the revised embedded Pan-Tompkins-based detector was evaluated on all 48 MIT-BIH records ({REF_BEATS:,} expert-annotated reference beats) and achieved gross sensitivity 0.9831, positive predictivity 0.9871, and F1 0.9851, with median matched-beat timing error 86.0 ms. The Hamilton comparator achieved sensitivity 0.9817, positive predictivity 0.9872, and F1 0.9844 under identical evaluation conditions. Controlled offline execution time of the firmware-equivalent implementation was {fw.median_runtime_s:.4f} s per approximately 30-min record (IQR {fw.iqr_runtime_s:.4f} s; {fw.median_ms_per_min_ecg:.4f} ms/min ECG; real-time factor {fw.median_realtime_factor:.6f}); Hamilton required {ham.median_runtime_s:.4f} s per record (IQR {ham.iqr_runtime_s:.4f} s; {ham.median_ms_per_min_ecg:.4f} ms/min ECG; real-time factor {ham.median_realtime_factor:.6f}). These values are controlled offline execution times and do not represent physical ESP32 latency. Record-level details are provided in Supplementary Figure Sx and Supplementary Table Sx.\n"
-    )
-    (ROOT / "final_validation_report.md").write_text(
-        f"""# Final Validation Report
+    (ROOT / "ecg_to_rr_validation_report.md").write_text(
+        f"""# ECG-to-RR Validation Report
 
 ## Status
 
-Classification: GREEN for Reviewer II Point 1 detection-performance readiness. Firmware-equivalent replay demonstrates strong MIT-BIH performance broadly comparable to Hamilton. The corrected runtime benchmark now uses the exact firmware-equivalent host replay rather than the earlier library Pan-Tompkins validation implementation. Physical ESP32 runtime remains unmeasured and is not claimed.
+Classification: GREEN for ECG-to-RR detection-performance readiness. Firmware-equivalent replay demonstrates strong MIT-BIH performance broadly comparable to Hamilton. The runtime benchmark uses the exact firmware-equivalent host replay rather than the earlier library Pan-Tompkins validation implementation. Physical ESP32 runtime remains unmeasured and is not claimed.
 
 ## Main Result
 
@@ -529,7 +515,7 @@ record,f1,sensitivity,ppv,TP,FP,FN
 
 ## Integrity Statement
 
-No MIT-BIH-driven parameter tuning was performed. Accuracy values were not changed during the runtime provenance correction. The final reported values are based on a firmware-equivalent host replay of the current ESP32 detector port and an independent Hamilton comparator evaluated under the same matching protocol.
+No MIT-BIH-driven parameter tuning was performed. Accuracy values were not changed during runtime benchmarking. The reported values are based on a firmware-equivalent host replay of the current ESP32 detector port and an independent Hamilton comparator evaluated under the same matching protocol.
 """
     )
 
@@ -537,7 +523,7 @@ No MIT-BIH-driven parameter tuning was performed. Accuracy values were not chang
 def main() -> None:
     archive_previous_outputs()
     records = load_all_records()
-    runtime_path = ROOT / "runtime_results_offline.csv"
+    runtime_path = ROOT / "ecg_to_rr_runtime_results.csv"
     runtime = pd.read_csv(runtime_path) if runtime_path.exists() else pd.DataFrame()
     complete_runtime = (
         len(runtime) == len(mitval.MITDB_RECORDS) * 2 * RUNTIME_REPS
@@ -561,14 +547,14 @@ def main() -> None:
         runtime.to_csv(runtime_path, index=False)
     runtime_sum = runtime_summary(runtime)
     recomputed = verify_accuracy_unchanged(records)
-    update_aggregate_results(runtime_sum)
+    update_benchmark_summary(runtime_sum)
     write_supplementary_table(runtime_sum)
     source = figure_source_data(records, recomputed, runtime_sum)
     build_figure(recomputed, runtime_sum, source)
     write_caption()
     write_text_outputs(runtime_sum)
     print(runtime_sum.to_string(index=False))
-    print("Accuracy totals verified unchanged; runtime provenance corrected.")
+    print("Accuracy totals verified unchanged; runtime provenance updated.")
 
 
 if __name__ == "__main__":

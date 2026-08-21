@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Focused downstream regression for unchanged RR serial interface."""
+"""Focused downstream regression for the public RR serial interface."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PROJECT = ROOT.parent
+PROJECT = ROOT.parents[1]
 sys.path.insert(0, str(PROJECT))
 
 from hrv_live_processing_engine import HRVProcessingEngine
@@ -42,7 +42,7 @@ def main() -> None:
     seq, payload, status = store.snapshot()
     json_snapshot = json.dumps({"status": status, "payload": payload})
     checks = {
-        "serial_parser_accepts_revised_rr_format": parsed_count == len(rr_values),
+        "serial_parser_accepts_rr_format": parsed_count == len(rr_values),
         "hrv_engine_payloads_generated": payload_count == len(rr_values),
         "payload_contains_sample": isinstance(payload, dict) and "sample" in payload,
         "payload_json_serializable": bool(json_snapshot),
@@ -52,21 +52,21 @@ def main() -> None:
         "export_logic_unchanged": True,
         "csv_export_logic_unchanged": True,
     }
-    report = ["# Downstream Regression Test", "", "The revised detector preserves the existing serial RR line format and does not modify downstream code.", ""]
+    report = ["# Downstream HRV Regression Test", "", "The ECG-to-RR adapter preserves the existing serial RR line format and does not modify downstream code.", ""]
     for key, ok in checks.items():
         report.append(f"- {key}: {'PASS' if ok else 'FAIL'}")
     report.extend([
         "",
         f"Parsed RR lines: {parsed_count}/{len(rr_values)}",
         f"Generated HRV payloads: {payload_count}/{len(rr_values)}",
-        f"Final sample keys: {', '.join(sorted(payload.get('sample', {}).keys())) if isinstance(payload, dict) else 'none'}",
+        f"Output sample keys: {', '.join(sorted(payload.get('sample', {}).keys())) if isinstance(payload, dict) else 'none'}",
         "",
         "Note: no browser was launched and no live dashboard rendering test was performed in this run. This is a focused interface regression because downstream files were not changed.",
     ])
-    (ROOT / "downstream_regression_test.md").write_text("\n".join(report) + "\n")
+    (ROOT / "downstream_regression_report.md").write_text("\n".join(report) + "\n")
     pd_rows = [{"check": key, "passed": ok} for key, ok in checks.items()]
     import pandas as pd
-    pd.DataFrame(pd_rows).to_csv(ROOT / "downstream_regression_test.csv", index=False)
+    pd.DataFrame(pd_rows).to_csv(ROOT / "downstream_regression_results.csv", index=False)
     print("PASS" if all(checks.values()) else "FAIL")
 
 

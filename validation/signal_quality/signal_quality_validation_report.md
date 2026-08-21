@@ -2,15 +2,15 @@
 
 ## Objective
 
-This corrected controlled benchmark asks whether the submitted RR-derived Signal Confidence indicates when ECG noise compromises the RR sequence delivered to downstream HRV processing. Signal Confidence is evaluated as an RR-stream reliability indicator, not as a morphology-based ECG SQI.
+This controlled benchmark asks whether the submitted RR-derived Signal Confidence indicates when ECG noise compromises the RR sequence delivered to downstream HRV processing. Signal Confidence is evaluated as an RR-stream reliability indicator, not as a morphology-based ECG SQI.
 
 ## Data and Analysis
 
-The full dataset contained 2520 non-overlapping 10 s windows from the 12 standard NSTDB noise-stress ECG records plus clean source records 118 and 119. The primary analysis used 1296 windows: clean source windows plus only actual noise-exposed NSTDB windows. Interleaved clean intervals from the noise-stress records were retained in `window_level_results.csv` and summarized separately as sensitivity/recovery material, but were not grouped under the nominal SNR label. The Point 1 firmware-equivalent Pan-Tompkins-based ESP32 detector replay was reused unchanged. Detected RR intervals were passed through the submitted HRV processing engine without tuning weights, thresholds, artifact windows, or status cutoffs. Expert annotations supplied the independent primary target: strict RR integrity, defined as zero false positives and zero false negatives in each window.
+The full dataset contained 2520 non-overlapping 10 s windows from the 12 standard NSTDB noise-stress ECG records plus clean source records 118 and 119. The primary analysis used 1296 windows: clean source windows plus only actual noise-exposed NSTDB windows. Interleaved clean intervals from the noise-stress records were retained in `signal_quality_window_results.csv` and summarized separately as sensitivity/recovery material, but were not grouped under the nominal SNR label. The firmware-equivalent Pan-Tompkins-based ESP32 detector replay was reused unchanged. Detected RR intervals were passed through the submitted HRV processing engine without tuning weights, thresholds, artifact windows, or status cutoffs. Expert annotations supplied the independent primary target: strict RR integrity, defined as zero false positives and zero false negatives in each window.
 
 ## Main Findings
 
-Corrected primary actual-SNR summary:
+Primary actual-SNR summary:
 
 | analysis_population | actual_snr_label | actual_snr_db | n_windows | rr_intact_windows | rr_intact_pct | median_signal_confidence | iqr_signal_confidence | signal_status_active_pct | signal_status_active_or_noisy_pct | orphanidou_usable_pct | rpeak_sensitivity | rpeak_ppv | pooled_rpeak_f1 | median_window_f1_sensitivity_only |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -66,7 +66,7 @@ Runtime summary:
 | Signal Confidence | complete path: ECG -> firmware-equivalent detector -> RR -> Signal Confidence | 10-s ECG window equivalent | 9.1900 | 0.0228 | 3.6468 | 3.6468 | 0.0004 |
 | Signal Confidence | quality assessment only: available RR intervals -> RR filtering/state update -> one Signal Confidence/Status decision per 10-s unit | 10-s RR analysis unit | 4.7306 | 0.0123 | 1.8772 | 1.8772 | 0.0002 |
 
-Runtime QC interpretation: the previous apparent inversion was caused by a non-equivalent benchmark boundary. The earlier Signal Confidence quality-stage timing calculated confidence after every RR update across a concatenated multi-record stream, whereas the complete-path timing reset state by record and reported one decision per 10 s window. The corrected benchmark uses the same 2520 non-overlapping 10 s units for all four boundaries and computes one quality decision per unit. Under these corrected semantics, complete-path runtime is greater than the corresponding quality-assessment-only runtime for both methods.
+Runtime QC interpretation: the previous apparent inversion was caused by a non-equivalent benchmark boundary. The earlier Signal Confidence quality-stage timing calculated confidence after every RR update across a concatenated multi-record stream, whereas the complete-path timing reset state by record and reported one decision per 10 s window. This benchmark uses the same 2520 non-overlapping 10 s units for all four boundaries and computes one quality decision per unit. Under these equivalent boundary semantics, complete-path runtime is greater than the corresponding quality-assessment-only runtime for both methods.
 
 ## Interpretation
 
@@ -74,8 +74,8 @@ Signal Confidence should not be interpreted as measuring whether ECG noise is vi
 
 ## Failure and Disagreement Modes
 
-Representative diagnostic examples are listed in `example_windows.csv` and plotted under `figures/qc_*.png`. The most important categories are high-confidence degraded windows, Orphanidou-rejected intact windows, and low-confidence intact windows. These distinctions are expected because Orphanidou evaluates ECG morphology/regularity, while Signal Confidence evaluates the downstream RR stream after beat extraction and filtering.
+Representative diagnostic examples are listed in `signal_quality_example_windows.csv` and plotted under `figures/qc_*.png`. The most important categories are high-confidence degraded windows, Orphanidou-rejected intact windows, and low-confidence intact windows. These distinctions are expected because Orphanidou evaluates ECG morphology/regularity, while Signal Confidence evaluates the downstream RR stream after beat extraction and filtering.
 
 ## Limitations
 
-NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG records, so window counts should not be interpreted as independent subjects. Orphanidou was implemented as a fixed-threshold literature/workflow port because no author-maintained runnable Python implementation was identified. The corrected Orphanidou comparator uses its own Hamilton detector and local refinement; expert annotations are reserved for evaluation. Physical ESP32 timing was not measured for Point 2.
+NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG records, so window counts should not be interpreted as independent subjects. Orphanidou was implemented as a fixed-threshold literature/workflow port because no author-maintained runnable Python implementation was identified. The Orphanidou comparator uses its own Hamilton detector and local refinement; expert annotations are reserved for evaluation. Physical ESP32 timing was not measured in this benchmark.

@@ -1,5 +1,5 @@
 check,passed
-serial_parser_accepts_revised_rr_format,True
+serial_parser_accepts_rr_format,True
 hrv_engine_payloads_generated,True
 payload_contains_sample,True
 payload_json_serializable,True

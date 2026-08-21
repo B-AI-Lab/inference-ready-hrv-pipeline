@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reviewer II Point 2: RR-stream quality validation under controlled ECG noise."""
+"""Controlled RR-stream quality validation under ECG noise."""
 
 from __future__ import annotations
 
@@ -30,10 +30,10 @@ except ImportError as exc:  # pragma: no cover
 
 
 ROOT = Path(__file__).resolve().parent
-PROJECT = ROOT.parent
+PROJECT = ROOT.parents[1]
 DATA_DIR = ROOT / "data"
 NSTDB_DIR = DATA_DIR / "nstdb"
-MITDB_DIR = PROJECT / "reviewer2_rpeak_validation" / "data" / "mitdb"
+MITDB_DIR = PROJECT / "validation" / "ecg_rpeak" / "data" / "mitdb"
 FIG_DIR = ROOT / "figures"
 LOG_DIR = ROOT / "logs"
 
@@ -45,7 +45,7 @@ NSTDB_DOI = "10.13026/C2HS3T"
 NSTDB_URL = "https://physionet.org/content/nstdb/1.0.0/"
 ORPHANIDOU_DOI = "10.1109/JBHI.2014.2338351"
 RUNTIME_REPS = 7
-CORRECTION_ARCHIVE = ROOT / "archive_pre_method_correction"
+CORRECTION_ARCHIVE = ROOT / "_signal_quality_archive"
 
 NSTDB_NOISE_RECORDS = [
     "118e24", "118e18", "118e12", "118e06", "118e00", "118e_6",
@@ -79,7 +79,7 @@ def import_from_path(module_name: str, path: Path):
 if str(PROJECT) not in sys.path:
     sys.path.insert(0, str(PROJECT))
 
-point1 = import_from_path("point1_firmware_equivalence", PROJECT / "reviewer2_rpeak_final" / "run_firmware_equivalence_check.py")
+point1 = import_from_path("ecg_to_rr_firmware_replay", PROJECT / "validation" / "ecg_rpeak" / "run_ecg_to_rr_benchmark.py")
 mitval = point1.mitval
 from hrv_live_processing_engine import HRVConfig, HRVProcessingEngine, clamp01, clean_nn_mask
 
@@ -104,28 +104,29 @@ def ensure_data() -> None:
 
 
 def preserve_previous_outputs() -> None:
-    """Preserve the earlier Point 2 outputs once before corrected regeneration."""
+    """Preserve earlier generated outputs once before regeneration."""
     if CORRECTION_ARCHIVE.exists():
         return
     CORRECTION_ARCHIVE.mkdir(parents=True, exist_ok=True)
     names = [
         "README.md",
         "environment.txt",
-        "window_level_results.csv",
-        "condition_level_results.csv",
-        "quality_classification_results.csv",
-        "runtime_results.csv",
-        "validation_report.md",
-        "methods_insert.md",
-        "results_insert.md",
-        "discussion_insert.md",
-        "reviewer_response.md",
-        "implementation_inventory.md",
+        "signal_quality_window_results.csv",
+        "signal_quality_condition_results.csv",
+        "signal_quality_classification_summary.csv",
+        "signal_quality_runtime_results.csv",
+        "signal_quality_runtime_summary.csv",
+        "runtime_boundary_consistency_check.csv",
+        "signal_quality_validation_report.md",
+        "manuscript_methods_text.md",
+        "manuscript_results_text.md",
+        "manuscript_discussion_text.md",
+        "signal_quality_implementation_inventory.md",
         "nstdb_metadata.csv",
-        "example_windows.csv",
-        "rr_stream_events.csv",
-        "rr_quality_event_trace.csv",
-        "terminology_audit.csv",
+        "signal_quality_example_windows.csv",
+        "signal_quality_rr_stream_events.csv",
+        "signal_quality_event_trace.csv",
+        "signal_quality_terminology_audit.csv",
     ]
     for name in names:
         src = ROOT / name
@@ -998,8 +999,8 @@ def create_figures(window_df: pd.DataFrame, quality_df: pd.DataFrame, examples: 
     ax.set_ylabel("AUROC")
     ax.tick_params(axis="x", labelrotation=20)
     fig.tight_layout()
-    fig.savefig(FIG_DIR / "supplementary_rr_stream_quality_noise_validation.png", dpi=300)
-    fig.savefig(FIG_DIR / "supplementary_rr_stream_quality_noise_validation.pdf")
+    fig.savefig(FIG_DIR / "supplementary_signal_quality_noise_stress_validation.png", dpi=300)
+    fig.savefig(FIG_DIR / "supplementary_signal_quality_noise_stress_validation.pdf")
     plt.close(fig)
 
     for _, ex in examples.iterrows():
@@ -1095,9 +1096,9 @@ def write_reports(
     clean_orph_acceptance = float(clean_orph.orphanidou_usable.mean() * 100.0) if len(clean_orph) else np.nan
     clean_orph_reasons = clean_orph.orphanidou_reason.value_counts().rename_axis("orphanidou_reason").reset_index(name="n_windows")
 
-    snr_summary.to_csv(ROOT / "supplementary_table_rr_quality_by_actual_snr.csv", index=False)
-    q_primary.to_csv(ROOT / "supplementary_table_quality_classifier_primary.csv", index=False)
-    all_window_snr_summary.to_csv(ROOT / "sensitivity_all_window_snr_summary.csv", index=False)
+    snr_summary.to_csv(ROOT / "signal_quality_supplementary_table_by_snr.csv", index=False)
+    q_primary.to_csv(ROOT / "signal_quality_supplementary_table_primary.csv", index=False)
+    all_window_snr_summary.to_csv(ROOT / "signal_quality_snr_sensitivity_summary.csv", index=False)
 
     implementation_inventory = f"""# Implementation Inventory
 
@@ -1134,11 +1135,11 @@ The frozen RR-stream quality implementation is `hrv_live_processing_engine.py`.
 - Signal Status: `Signal Lost` if confidence <0.35 or last accepted RR is >5 s old; `Active` if confidence >=0.75; `Noisy` if confidence >=0.50; otherwise `Low Confidence`.
 - Signal Confidence was sampled non-mutatingly at each 10 s window end using the submitted formula and current RR buffer state. Detector parameters, quality weights, thresholds, and status cutoffs were not tuned on NSTDB.
 """
-    (ROOT / "implementation_inventory.md").write_text(implementation_inventory)
+    (ROOT / "signal_quality_implementation_inventory.md").write_text(implementation_inventory)
 
-    readme = f"""# Reviewer II Point 2: RR-Stream Quality Under Controlled ECG Noise
+    readme = f"""# Controlled Signal-Quality Validation
 
-This directory contains a focused validation responding to Reviewer II Point 2. It preserves the conceptual distinction that manuscript Signal Confidence is a downstream RR-stream reliability indicator, not a raw-ECG morphology signal-quality index.
+This directory contains the controlled noise-stress validation of Signal Confidence as a downstream RR-stream reliability indicator. It is not a raw-ECG morphology signal-quality index.
 
 ## Dataset
 
@@ -1150,10 +1151,11 @@ NSTDB adds electrode-motion noise after the first 5 minutes in alternating 2-min
 
 ```bash
 cd {PROJECT}
-reviewer2_rpeak_validation/.venv/bin/python reviewer2_signal_quality_validation/run_noise_quality_validation.py
+python3 validation/signal_quality/run_signal_quality_benchmark.py
+python3 validation/signal_quality/benchmark_signal_quality_runtime.py
 ```
 
-The workflow verifies/downloads NSTDB, reuses the Point 1 firmware-equivalent detector replay unchanged, generates RR intervals, runs the submitted HRV engine Signal Confidence logic without tuning, applies a fixed Orphanidou-style ECG SQI benchmark, and writes all tables, figures, and manuscript-ready text into this directory.
+The workflow verifies/downloads NSTDB, reuses the firmware-equivalent ECG-to-RR detector replay unchanged, generates RR intervals, runs the submitted HRV engine Signal Confidence logic without tuning, applies a fixed Orphanidou-based ECG SQI comparator, and writes all tables, figures, and manuscript-ready text into this directory.
 
 ## Evaluation Unit and Ground Truth
 
@@ -1161,7 +1163,7 @@ Primary windows are non-overlapping 10 s segments. R-peak detections are matched
 
 ## Orphanidou Benchmark
 
-No author-maintained executable Python implementation was found during the audit. The corrected benchmark is a fixed-threshold Python port of the published Orphanidou ECG SQI rules and the publicly documented workflow associated with co-author Peter Charlton's beat-detector resources: 10 s ECG segments, ECG bandpass preprocessing, independent fixed Hamilton QRS detection, local R-peak refinement within +/-100 ms, mean HR 40-180 bpm, maximum RR interval <3 s, maximum/minimum RR ratio <2.2, adaptive beat-template construction, average beat-template correlation, and ECG acceptance threshold >=0.66. Expert annotations were used only for evaluation ground truth and were not supplied to either quality algorithm.
+No author-maintained executable Python implementation was found during the audit. The comparator is a fixed-threshold Python port of the published Orphanidou ECG SQI rules and the publicly documented workflow associated with co-author Peter Charlton's beat-detector resources: 10 s ECG segments, ECG bandpass preprocessing, independent fixed Hamilton QRS detection, local R-peak refinement within +/-100 ms, mean HR 40-180 bpm, maximum RR interval <3 s, maximum/minimum RR ratio <2.2, adaptive beat-template construction, average beat-template correlation, and ECG acceptance threshold >=0.66. Expert annotations were used only for evaluation ground truth and were not supplied to either quality algorithm.
 
 ## Runtime Boundaries
 
@@ -1169,19 +1171,19 @@ Runtime results separate quality-stage and complete-path costs: Signal Confidenc
 """
     (ROOT / "README.md").write_text(readme)
 
-    report = f"""# Validation Report
+    report = f"""# Signal-Quality Validation Report
 
 ## Objective
 
-This corrected controlled benchmark asks whether the submitted RR-derived Signal Confidence indicates when ECG noise compromises the RR sequence delivered to downstream HRV processing. Signal Confidence is evaluated as an RR-stream reliability indicator, not as a morphology-based ECG SQI.
+This controlled benchmark asks whether the submitted RR-derived Signal Confidence indicates when ECG noise compromises the RR sequence delivered to downstream HRV processing. Signal Confidence is evaluated as an RR-stream reliability indicator, not as a morphology-based ECG SQI.
 
 ## Data and Analysis
 
-The full dataset contained {total_windows} non-overlapping 10 s windows from the 12 standard NSTDB noise-stress ECG records plus clean source records 118 and 119. The primary analysis used {primary_windows} windows: clean source windows plus only actual noise-exposed NSTDB windows. Interleaved clean intervals from the noise-stress records were retained in `window_level_results.csv` and summarized separately as sensitivity/recovery material, but were not grouped under the nominal SNR label. The Point 1 firmware-equivalent Pan-Tompkins-based ESP32 detector replay was reused unchanged. Detected RR intervals were passed through the submitted HRV processing engine without tuning weights, thresholds, artifact windows, or status cutoffs. Expert annotations supplied the independent primary target: strict RR integrity, defined as zero false positives and zero false negatives in each window.
+The full dataset contained {total_windows} non-overlapping 10 s windows from the 12 standard NSTDB noise-stress ECG records plus clean source records 118 and 119. The primary analysis used {primary_windows} windows: clean source windows plus only actual noise-exposed NSTDB windows. Interleaved clean intervals from the noise-stress records were retained in `signal_quality_window_results.csv` and summarized separately as sensitivity/recovery material, but were not grouped under the nominal SNR label. The firmware-equivalent Pan-Tompkins-based ESP32 detector replay was reused unchanged. Detected RR intervals were passed through the submitted HRV processing engine without tuning weights, thresholds, artifact windows, or status cutoffs. Expert annotations supplied the independent primary target: strict RR integrity, defined as zero false positives and zero false negatives in each window.
 
 ## Main Findings
 
-Corrected primary actual-SNR summary:
+Primary actual-SNR summary:
 
 {df_to_md(snr_summary)}
 
@@ -1211,18 +1213,18 @@ Signal Confidence should not be interpreted as measuring whether ECG noise is vi
 
 ## Failure and Disagreement Modes
 
-Representative diagnostic examples are listed in `example_windows.csv` and plotted under `figures/qc_*.png`. The most important categories are high-confidence degraded windows, Orphanidou-rejected intact windows, and low-confidence intact windows. These distinctions are expected because Orphanidou evaluates ECG morphology/regularity, while Signal Confidence evaluates the downstream RR stream after beat extraction and filtering.
+Representative diagnostic examples are listed in `signal_quality_example_windows.csv` and plotted under `figures/qc_*.png`. The most important categories are high-confidence degraded windows, Orphanidou-rejected intact windows, and low-confidence intact windows. These distinctions are expected because Orphanidou evaluates ECG morphology/regularity, while Signal Confidence evaluates the downstream RR stream after beat extraction and filtering.
 
 ## Limitations
 
-NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG records, so window counts should not be interpreted as independent subjects. Orphanidou was implemented as a fixed-threshold literature/workflow port because no author-maintained runnable Python implementation was identified. The corrected Orphanidou comparator uses its own Hamilton detector and local refinement; expert annotations are reserved for evaluation. Physical ESP32 timing was not measured for Point 2.
+NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG records, so window counts should not be interpreted as independent subjects. Orphanidou was implemented as a fixed-threshold literature/workflow port because no author-maintained runnable Python implementation was identified. The Orphanidou-based comparator uses its own Hamilton detector and local refinement; expert annotations are reserved for evaluation. Physical ESP32 timing was not measured in this benchmark.
 """
-    (ROOT / "validation_report.md").write_text(report)
+    (ROOT / "signal_quality_validation_report.md").write_text(report)
 
-    (ROOT / "methods_insert.md").write_text(
+    (ROOT / "manuscript_methods_text.md").write_text(
         "RR-stream quality under controlled ECG noise was evaluated using the MIT-BIH Noise Stress Test Database v1.0.0. "
         f"The 12 standard pre-generated noise-stress records derived from MIT-BIH records 118 and 119 were analyzed at the database-provided SNR labels 24, 18, 12, 6, 0, and -6 dB, together with the clean source ECG records. Because NSTDB applies the nominal SNR only during alternating 2-minute noise-exposed intervals after the initial 5-minute clean period, the primary dose-response analysis used clean source windows plus actual noise-exposed windows only ({primary_windows} windows); interleaved clean intervals were retained as a sensitivity/recovery analysis. "
-        "Signals were resampled to 250 Hz and passed through the same frozen firmware-equivalent embedded R-peak detector used for the revised MIT-BIH validation. "
+        "Signals were resampled to 250 Hz and passed through the same frozen firmware-equivalent embedded R-peak detector used for the MIT-BIH ECG-to-RR validation. "
         "Detected RR intervals were then processed by the submitted HRV engine without tuning Signal Confidence weights, artifact thresholds, window durations, or Signal Status cutoffs. "
         "Non-overlapping 10 s windows were used as the common evaluation unit. Expert beat annotations were matched one-to-one to detected beats within +/-150 ms, and the primary endpoint was strict RR-sequence integrity, defined as zero false-positive and zero false-negative beat detections within the window. "
         "A fixed Orphanidou-style ECG SQI benchmark was implemented using 10 s ECG windows, ECG bandpass preprocessing, independent Hamilton QRS detection, local R-peak refinement, the published physiological plausibility rules, adaptive beat-template correlation, and the 0.66 acceptance threshold. Expert annotations were not supplied to either quality algorithm.\n"
@@ -1232,24 +1234,17 @@ NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG reco
     orph_auc = float(orph_cont.AUROC_for_degraded.iloc[0]) if len(orph_cont) else np.nan
     status_bal = float(status_primary.balanced_accuracy.iloc[0]) if len(status_primary) else np.nan
     orph_bal = float(orph_bin.balanced_accuracy.iloc[0]) if len(orph_bin) else np.nan
-    (ROOT / "results_insert.md").write_text(
-        f"The corrected primary NSTDB analysis included {primary_windows} non-overlapping 10 s windows composed of clean source ECG plus actual noise-exposed intervals. "
+    (ROOT / "manuscript_results_text.md").write_text(
+        f"The primary NSTDB analysis included {primary_windows} non-overlapping 10 s windows composed of clean source ECG plus actual noise-exposed intervals. "
         f"Using strict expert-annotation-derived RR integrity as the primary target, continuous Signal Confidence yielded AUROC {sc_auc:.3f} and AUPRC {sc_ap:.3f} for degraded RR windows, while the Orphanidou-style ECG SQI yielded AUROC {orph_auc:.3f}. "
         f"The existing non-Active Signal Status criterion had balanced accuracy {status_bal:.3f}; the Orphanidou binary SQI had balanced accuracy {orph_bal:.3f}. "
-        f"Corrected actual-SNR summaries showed RR-intact window rates of {', '.join(f'{r.actual_snr_label}: {r.rr_intact_pct:.1f}%' for _, r in snr_summary.iterrows())}. Signal Confidence declined most clearly when beat-sequence integrity degraded, supporting its interpretation as an RR-stream reliability indicator rather than a raw-ECG morphology SQI.\n"
+        f"Actual-SNR summaries showed RR-intact window rates of {', '.join(f'{r.actual_snr_label}: {r.rr_intact_pct:.1f}%' for _, r in snr_summary.iterrows())}. Signal Confidence declined most clearly when beat-sequence integrity degraded, supporting its interpretation as an RR-stream reliability indicator rather than a raw-ECG morphology SQI.\n"
     )
-    (ROOT / "discussion_insert.md").write_text(
+    (ROOT / "manuscript_discussion_text.md").write_text(
         "This additional analysis supports interpreting Signal Confidence as a downstream RR-stream reliability indicator rather than a raw-ECG morphology SQI. "
-        "Divergence from the corrected Orphanidou-style benchmark is expected in windows where ECG morphology is degraded but R-peak topology remains intact, or conversely where beat-detection errors occur without sufficient RR-filter evidence to lower Signal Confidence. "
+        "Divergence from the Orphanidou-style benchmark is expected in windows where ECG morphology is degraded but R-peak topology remains intact, or conversely where beat-detection errors occur without sufficient RR-filter evidence to lower Signal Confidence. "
         "Because NSTDB uses repeated noise variants from two source ECG records, these findings should be framed as a controlled technical robustness benchmark, not as universal clinical ECG-quality validation.\n"
     )
-    (ROOT / "reviewer_response.md").write_text(
-        "We thank the reviewer for highlighting the importance of signal-quality robustness. We clarified that the manuscript's Signal Confidence was designed as an RR-stream reliability indicator, not as a morphology-based ECG signal-quality index. The reviewer's suggestion nevertheless identifies an important validation opportunity: controlled ECG noise can test whether the downstream indicator responds when upstream degradation compromises RR extraction.\n\n"
-        f"We therefore performed an additional analysis using the MIT-BIH Noise Stress Test Database v{NSTDB_VERSION}. Noisy ECGs were passed through the same frozen firmware-equivalent embedded R-peak detector used in the Point 1 validation, and Signal Confidence was generated from the resulting RR stream without parameter tuning. Because the nominal NSTDB SNR applies only during alternating noise-exposed intervals, the primary analysis used clean source windows plus actual noise-exposed windows only ({primary_windows} windows), while retaining interleaved clean intervals as a sensitivity/recovery analysis. Expert beat annotations provided an independent reference for actual RR-sequence integrity, defined as zero false-positive and zero false-negative detections within non-overlapping 10 s windows. We also evaluated a corrected Orphanidou-style ECG SQI using ECG preprocessing, an independent Hamilton detector with local R-peak refinement, physiological plausibility rules, adaptive template correlation, and the fixed 0.66 acceptance threshold.\n\n"
-        f"In the corrected primary population, continuous Signal Confidence achieved AUROC {sc_auc:.3f} and AUPRC {sc_ap:.3f} for detecting degraded RR windows under the strict expert-annotation-derived endpoint. The corrected Orphanidou-style continuous SQI achieved AUROC {orph_auc:.3f}. The existing Signal Status mapping and Orphanidou binary SQI are reported with sensitivity, specificity, balanced accuracy, F1, and MCC in the new supplementary table. Runtime was measured separately for quality-stage and complete-path boundaries so that RR-derived and ECG-morphology methods are not compared across mismatched computational scopes.\n\n"
-        "We revised terminology to avoid implying that Signal Confidence is a raw-ECG morphology SQI. The added benchmark supports the RR-stream quality layer under controlled ECG noise but does not establish universal ECG-quality classification, clinical diagnostic validity, or robustness across all real-world artifact types.\n"
-    )
-
     terminology = []
     for path in [PROJECT / "PAPER_REVIEW_DRAFT_v3_7.md", PROJECT / "HRV_LIVE_ENGINE_README.md"]:
         if not path.exists():
@@ -1266,7 +1261,7 @@ NSTDB contains repeated noise variants from only two underlying MIT-BIH ECG reco
                 replacement = replacement.replace("signal validity", "RR-stream validity")
                 replacement = replacement.replace("artifact robustness", "RR-stream artifact robustness")
                 terminology.append({"file": str(path.relative_to(PROJECT)), "line": lineno, "current_text": line.strip(), "proposed_replacement": replacement.strip()})
-    pd.DataFrame(terminology).to_csv(ROOT / "terminology_audit.csv", index=False)
+    pd.DataFrame(terminology).to_csv(ROOT / "signal_quality_terminology_audit.csv", index=False)
 
 
 def main() -> None:
@@ -1310,19 +1305,19 @@ def main() -> None:
     runtime_df = make_runtime_results(records_data, window_df)
     examples = select_examples(window_df)
 
-    window_df.to_csv(ROOT / "window_level_results.csv", index=False)
-    condition_df.to_csv(ROOT / "condition_level_results.csv", index=False)
-    quality_df.to_csv(ROOT / "quality_classification_results.csv", index=False)
-    runtime_df.to_csv(ROOT / "runtime_results.csv", index=False)
-    rr_df.to_csv(ROOT / "rr_stream_events.csv", index=False)
-    quality_events_df.to_csv(ROOT / "rr_quality_event_trace.csv", index=False)
-    examples.to_csv(ROOT / "example_windows.csv", index=False)
+    window_df.to_csv(ROOT / "signal_quality_window_results.csv", index=False)
+    condition_df.to_csv(ROOT / "signal_quality_condition_results.csv", index=False)
+    quality_df.to_csv(ROOT / "signal_quality_classification_summary.csv", index=False)
+    runtime_df.to_csv(ROOT / "signal_quality_runtime_results.csv", index=False)
+    rr_df.to_csv(ROOT / "signal_quality_rr_stream_events.csv", index=False)
+    quality_events_df.to_csv(ROOT / "signal_quality_event_trace.csv", index=False)
+    examples.to_csv(ROOT / "signal_quality_example_windows.csv", index=False)
     create_figures(window_df, quality_df, examples, records_by_name)
     write_reports(metadata, window_df, condition_df, quality_df, runtime_df, examples)
 
     elapsed = time.perf_counter() - t_start
     summary = [
-        f"Completed Reviewer II Point 2 validation in {elapsed:.1f} s.",
+        f"Completed controlled signal-quality validation in {elapsed:.1f} s.",
         f"Records analyzed: {', '.join([d['record'] for d in records_data])}",
         f"Windows: {len(window_df)}",
         f"Outputs: {ROOT}",

@@ -1,10 +1,10 @@
 # Implementation Report
 
-The original proprietary/adaptive positive-peak prototype detector was not retained as the evidence-bearing ECG-to-RR route. The revised route uses a fixed Pan-Tompkins-based QRS detector for the embedded ECG-to-RR adapter. An initial final benchmark used `py-ecg-detectors` 1.3.5, but the ESP32 firmware is a separate C++ implementation and was not output-identical to that library implementation.
+The original proprietary/adaptive positive-peak prototype detector was not retained as the evidence-bearing ECG-to-RR route. The ECG-to-RR route uses a fixed Pan-Tompkins-based QRS detector for the embedded ECG-to-RR adapter. An initial benchmark used `py-ecg-detectors` 1.3.5, but the ESP32 firmware is a separate C++ implementation and was not output-identical to that library implementation.
 
 Reference: Pan J, Tompkins WJ. A Real-Time QRS Detection Algorithm. IEEE Transactions on Biomedical Engineering. 1985;BME-32(3):230-236.
 
-Evidence-bearing implementation source after final provenance check: firmware-equivalent host replay of `reviewer2_rpeak_final/firmware/src/main.cpp` logic in `reviewer2_rpeak_final/run_firmware_equivalence_check.py`.
+Evidence-bearing implementation source after provenance check: firmware-equivalent host replay of `firmware/esp32_ecg_rr/main.cpp` logic in `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py`.
 
 Algorithm stages at 250 Hz:
 - first-order Butterworth bandpass, 5-15 Hz;

@@ -316,7 +316,7 @@ export function EventAnnotatedReadoutsPanel({ layer }: { layer: LayerState }) {
           </div>
           <h2 className="mt-2 text-xl font-semibold text-white">Second Layer Readouts</h2>
           <p className="mt-2 max-w-3xl text-sm text-slate-400">
-            Readouts update after completed phases only. Active phases are annotated internally without final summaries.
+            Readouts update after completed phases only. Active phases are annotated internally without summary output.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -692,5 +692,4 @@ function formatPercent01(value: number | null): string {
   if (value === null || Number.isNaN(value)) return "n/a";
   return `${(value * 100).toFixed(0)}%`;
 }
-
 

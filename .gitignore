@@ -16,8 +16,7 @@ dist/
 ~$*.doc*
 .paper-review/
 
-reviewer2_rpeak_validation/data/
-reviewer2_signal_quality_validation/data/
+validation/ecg_rpeak/data/
+validation/signal_quality/data/
 hrv_benchmark_exports/
 hrv_validation_exports/
-

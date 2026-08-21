@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Public MIT-BIH helper functions for Reviewer-2 final validation scripts.
+"""Public MIT-BIH helper functions for ECG-to-RR validation scripts.
 
 This file is intentionally limited to public data loading, channel selection,
 one-to-one beat matching, and metric calculation. The evidence-bearing ECG-to-RR
-detector implementation lives in `reviewer2_rpeak_final/run_firmware_equivalence_check.py`.
+detector implementation lives in `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py`.
 """
 
 from __future__ import annotations

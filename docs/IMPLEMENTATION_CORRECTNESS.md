@@ -2,8 +2,8 @@
 
 Date: 2026-08-21
 
-Scope: final independent scientific implementation-correctness audit of the
-public release candidate. This pass did not modify production algorithms,
+Scope: independent scientific implementation-correctness audit of the
+public repository. This pass did not modify production algorithms,
 classification metrics, figures, or manuscript-reported validation results.
 
 ## Executive Finding
@@ -56,7 +56,7 @@ measurement or a fully anti-aliased respiratory-rate estimator.
 | Artifact Ratio / RR quality | Recent rejected raw RR fraction; RR quality = `1 - artifact_ratio`. | `hrv_live_processing_engine.py:595-602`, `1084-1101` | Stable stream followed by six rejected 2500 ms intervals. | Rejected count increased; confidence dropped; status became `Signal Lost`. | Agrees. | VERIFIED |
 | Beat density | Recent valid beat count divided by expected beats from mean RR and 60 s analysis window, clipped to 0-1. | `hrv_live_processing_engine.py:1086-1091` | Early 12-beat stream and mature 80-beat stable stream. | Early confidence stayed lower due incomplete 60 s density; mature stream reached 1.0. | Agrees if described as 60 s density, not instantaneous density. | VERIFIED WITH CAVEAT |
 | Freshness | 1.0 within 3 s since last valid RR, linearly decays to 0 at 10 s. | `hrv_live_processing_engine.py:1092-1100` | Valid stream followed by invalid RR at later timestamps. | Status became `Signal Lost` when seconds since last valid exceeded 5 s. | Agrees. | VERIFIED |
-| Signal Confidence | `0.5*RR quality + 0.3*beat density + 0.2*freshness`, clipped 0-1. | `hrv_live_processing_engine.py:1084-1101` | Stable mature stream and rejected/stale stream. | Mature stable stream: 1.0 Active. Rejected/stale stream: confidence 0.364-0.650 but status Signal Lost due stale rule. | Agrees with Reviewer-2 Signal Confidence validation as a rule-based RR-stream reliability measure. | VERIFIED |
+| Signal Confidence | `0.5*RR quality + 0.3*beat density + 0.2*freshness`, clipped 0-1. | `hrv_live_processing_engine.py:1084-1101` | Stable mature stream and rejected/stale stream. | Mature stable stream: 1.0 Active. Rejected/stale stream: confidence 0.364-0.650 but status Signal Lost due stale rule. | Agrees with controlled Signal Confidence validation as a rule-based RR-stream reliability measure. | VERIFIED |
 | Signal Status | Signal Lost if confidence <0.35 or stale >5 s; Active >=0.75; Noisy >=0.50; else Low Confidence. | `hrv_live_processing_engine.py:1103-1111` | Confidence/status boundary tests. | Status matched thresholds. | Agrees. | VERIFIED |
 | Baseline initialization | Add baseline features while elapsed <=300 s and recent artifact ratio <=0.12 with at least 20 recent records; initialized after >=120 s and at least 2 baseline stats. | `hrv_live_processing_engine.py:995-1009` | Stable synthetic stream. | Baseline initialized after criteria were met. MAD=0 baselines can prevent robust-z outputs unless std >0 exists. | Agrees with initialization concept. | VERIFIED WITH CAVEAT |
 | Robust baseline z-scores | Median/MAD z using 1.4826*MAD; fallback to sample SD; return `None` if both dispersion estimates are zero. | `hrv_live_processing_engine.py:314-331`, `413-417` | Manual baseline stats with nonzero MAD and zero-dispersion boundary. | Z-scores matched robust formula; unsupported zero-dispersion z returned `None`. | Agrees. | VERIFIED |
@@ -225,14 +225,12 @@ the composite indices. They do not validate clinical interpretation.
 How parity was established:
 
 1. The evidence-bearing firmware source is present at
-   `reviewer2_rpeak_final/firmware/src/main.cpp`.
-2. A public copy is also present at `firmware/reviewer2_final/main.cpp`.
-3. `cmp` confirmed those two firmware files are byte-identical.
-4. The host replay in `reviewer2_rpeak_final/run_firmware_equivalence_check.py`
+   `firmware/esp32_ecg_rr/main.cpp`.
+2. The host replay in `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py`
    mirrors the firmware constants and sequential update logic: IIR filter,
    derivative, squaring, 38-sample moving-window integration, refractory period,
    threshold updates, RR-missed search-back logic, and RR validity gating.
-5. The final MIT-BIH values reported in the Reviewer-2 package are generated
+3. The MIT-BIH values reported in the ECG-to-RR validation package are generated
    from the host replay, not from the earlier `py-ecg-detectors` route.
 
 Quantified validation result for the firmware-equivalent host replay:
@@ -248,7 +246,7 @@ Quantified validation result for the firmware-equivalent host replay:
 Remaining caveat: this audit did not execute a compiled C++ host fixture or a
 physical ESP32 on identical ECG input. Therefore, "firmware parity" is best
 stated as source-level equivalence between the included firmware and the
-Reviewer-2 host replay plus external MIT-BIH validation of that host replay.
+firmware-equivalent host replay plus external MIT-BIH validation of that host replay.
 It should not be overstated as byte-for-byte runtime output comparison against
 an ESP32 device unless such a fixture is added.
 
@@ -278,21 +276,19 @@ incorrect and should be replaced with the distinction above.
 
 ## Evidence-Bearing Firmware In Public Release
 
-The public candidate contains the evidence-bearing Reviewer-2 firmware and its
+The public repository contains the evidence-bearing ESP32 ECG-to-RR firmware and its
 build context:
 
-- `reviewer2_rpeak_final/firmware/src/main.cpp`
-- `reviewer2_rpeak_final/firmware/platformio.ini`
-- `firmware/reviewer2_final/main.cpp`
-- `firmware/reviewer2_final/platformio.ini`
-- `reviewer2_rpeak_final/run_firmware_equivalence_check.py`
-- `reviewer2_rpeak_final/firmware_replay_aggregate_results.csv`
-- `reviewer2_rpeak_final/firmware_replay_record_level_results.csv`
-- `reviewer2_rpeak_final/aggregate_results.csv`
-- `reviewer2_rpeak_final/record_level_results.csv`
+- `firmware/esp32_ecg_rr/main.cpp`
+- `firmware/esp32_ecg_rr/platformio.ini`
+- `validation/ecg_rpeak/run_ecg_to_rr_benchmark.py`
+- `validation/ecg_rpeak/firmware_replay_benchmark_summary.csv`
+- `validation/ecg_rpeak/firmware_replay_record_level_benchmark.csv`
+- `validation/ecg_rpeak/ecg_to_rr_benchmark_summary.csv`
+- `validation/ecg_rpeak/ecg_to_rr_record_level_results.csv`
 
-The excluded legacy root `src/main.cpp` is obsolete for this public candidate
-because the validation evidence is tied to the isolated Reviewer-2 final
+The excluded legacy root `src/main.cpp` is obsolete for this public repository
+because the validation evidence is tied to the isolated
 Pan-Tompkins firmware source listed above, not to the development root sketch.
 
 ## xlsx Dependency
@@ -348,11 +344,11 @@ direct respiratory sensor, high-frequency respiratory or RR oscillations can
 alias into lower RR-derived frequencies; the output should therefore be
 interpreted only as an experimental RR-derived spectral proxy."
 
-## Final Conclusions
+## Conclusions
 
 1. Repository hygiene: satisfactory from the previous release-preparation pass;
    not re-audited here.
-2. Reviewer-2 reproducibility: the final Reviewer-2 ECG-to-RR and RR-stream
+2. Validation reproducibility: the ECG-to-RR and RR-stream
    quality outputs remain traceable to the included scripts and result tables.
 3. Firmware equivalence: source-level firmware/replay equivalence is documented
    and the included firmware copies are byte-identical; direct compiled
