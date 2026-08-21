@@ -1,0 +1,673 @@
+record,detector,rep,runtime_s,duration_s,ms_per_min_ecg,realtime_factor,samples_per_s,n_samples,n_detections,runtime_boundary
+100,Embedded Pan-Tompkins firmware replay,1,0.31375484890304506,1805.556,10.426312412455056,0.0001737718735409176,1438667.8057029357,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,2,0.31061528995633125,1805.556,10.321982479291629,0.00017203304132152713,1453209.209577094,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,3,0.31595447193831205,1805.556,10.499407559942046,0.00017499012599903413,1428652.037209116,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,4,0.312808136921376,1805.556,10.394852452808198,0.00017324754088013665,1443021.9253326398,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,5,0.3138461841735989,1805.556,10.42934755300635,0.00017382245921677248,1438249.1257256183,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,6,0.3142281211912632,1805.556,10.442039610776842,0.00017403399351294737,1436500.9671596205,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+100,Embedded Pan-Tompkins firmware replay,7,0.3153415550477803,1805.556,10.479039865208732,0.00017465066442014552,1431428.8515879423,451389,2271,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,1,0.3170821131207049,1805.556,10.536879934625286,0.0001756146655770881,1423571.3126718313,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,2,0.3173467619344592,1805.556,10.545674416117556,0.00017576124026862596,1422384.1366726288,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,3,0.31775862886570394,1805.556,10.559361067694514,0.0001759893511282419,1420540.4951906845,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,4,0.31693403399549425,1805.556,10.531959152598786,0.0001755326525433131,1424236.4390768372,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,5,0.3171840338036418,1805.556,10.540266836486106,0.0001756711139414351,1423113.876783092,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,6,0.3179992809891701,1805.556,10.567358120905807,0.0001761226353484301,1419465.4736196485,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+101,Embedded Pan-Tompkins firmware replay,7,0.31685156701132655,1805.556,10.529218711953321,0.00017548697853255537,1424607.1252153981,451389,1868,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,1,0.3154957068618387,1805.556,10.484162447307268,0.00017473604078845447,1430729.45267579,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,2,0.31594439106993377,1805.556,10.499072565013783,0.0001749845427502297,1428697.6213484537,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,3,0.3148997430689633,1805.556,10.464358116911244,0.0001744059686151874,1433437.1809923816,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,4,0.31400795793160796,1805.556,10.434723418103054,0.00017391205696838422,1437508.154166953,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,5,0.31172811309807,1805.556,10.35896243920665,0.00017264937398677748,1448021.4681759952,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,6,0.31478078197687864,1805.556,10.460404949285826,0.0001743400824880971,1433978.9016508497,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+102,Embedded Pan-Tompkins firmware replay,7,0.3161335298791528,1805.556,10.50535779158839,0.00017508929652647315,1427842.8491041455,451389,2186,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,1,0.310753908008337,1805.556,10.326588862655171,0.0001721098143775862,1452560.9762818813,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,2,0.309664704836905,1805.556,10.290393812329443,0.00017150656353882404,1457670.1604974282,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,3,0.30680103693157434,1805.556,10.195231948438298,0.00016992053247397165,1471275.9921364705,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,4,0.30738577409647405,1805.556,10.214663209442655,0.00017024438682404426,1468477.1971858726,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,5,0.30879758088849485,1805.556,10.261578623598322,0.00017102631039330536,1461763.3943285136,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,6,0.3008163480553776,1805.556,9.996356182429487,0.00016660593637382479,1500546.7718692713,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+103,Embedded Pan-Tompkins firmware replay,7,0.30815456178970635,1805.556,10.240210609575323,0.00017067017682625537,1464813.6226782228,451389,2079,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,1,0.31860622484236956,1805.556,10.587527327062784,0.00017645878878437974,1416761.396370472,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,2,0.31703947903588414,1805.556,10.535463171539984,0.00017559105285899974,1423762.748326083,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,3,0.31660006917081773,1805.556,10.52086124731056,0.00017534768745517597,1425738.791473411,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,4,0.31756412517279387,1805.556,10.552897561951903,0.00017588162603253174,1421410.5568580488,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,5,0.31724870717152953,1805.556,10.542415981720739,0.000175706933028679,1422823.7650656325,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,6,0.31486117793247104,1805.556,10.463076568075575,0.00017438460946792624,1433612.7526551094,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+104,Embedded Pan-Tompkins firmware replay,7,0.3128015568945557,1805.556,10.394633793509223,0.00017324389655848707,1443052.2804340187,451389,2245,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,1,0.3112294839229435,1805.556,10.342392612235017,0.00017237321020391693,1450341.3825399596,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,2,0.3106869850307703,1805.556,10.324364961178837,0.00017207274935298063,1452873.8625961258,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,3,0.3106012628413737,1805.556,10.32151634758624,0.00017202527245977067,1453274.8381983484,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,4,0.3120824838988483,1805.556,10.370738450610725,0.00017284564084351208,1446377.2345079884,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,5,0.30881507392041385,1805.556,10.262159930362078,0.00017103599883936795,1461680.5917846146,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,6,0.30736755300313234,1805.556,10.21405770864373,0.0001702342951440622,1468564.2501614345,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+105,Embedded Pan-Tompkins firmware replay,7,0.30612118379212916,1805.556,10.172639911211698,0.00016954399852019497,1474543.4942082106,451389,2598,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,1,0.3158436908852309,1805.556,10.495726221238142,0.000174928770353969,1429153.1318383138,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,2,0.3194516838993877,1805.556,10.615622574964865,0.0001769270429160811,1413011.8035069313,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,3,0.31522925617173314,1805.556,10.475308088092525,0.00017458846813487542,1431938.7910939606,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,4,0.3172361140605062,1805.556,10.541997503057436,0.0001756999583842906,1422880.2459543017,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,5,0.3134314159397036,1805.556,10.415564488934276,0.00017359274148223791,1440152.3811730347,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,6,0.31400786503218114,1805.556,10.4347203309844,0.00017391200551640667,1437508.5794546558,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+106,Embedded Pan-Tompkins firmware replay,7,0.3161698170006275,1805.556,10.506563640251342,0.000175109394004189,1427678.9741732497,451389,2024,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,1,0.3081213010009378,1805.556,10.23910532825139,0.00017065175547085652,1464971.7450031997,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,2,0.3063822779804468,1805.556,10.181316269795458,0.00016968860449659097,1473286.911290631,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,3,0.3090583619195968,1805.556,10.270244575729475,0.00017117074292882458,1460529.9697971975,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,4,0.307520872913301,1805.556,10.21915264594289,0.00017031921076571482,1467832.0717672377,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,5,0.3083057620096952,1805.556,10.245235107956614,0.00017075391846594354,1464095.2444664505,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,6,0.3043737069237977,1805.556,10.11456992495822,0.00016857616541597032,1483009.1750106676,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+107,Embedded Pan-Tompkins firmware replay,7,0.3072656989097595,1805.556,10.210673019604803,0.00017017788366008007,1469051.057770584,451389,2132,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,1,0.3223906771745533,1805.556,10.713287558222063,0.0001785547926370344,1400130.4378774038,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,2,0.32478370890021324,1805.556,10.792809823684667,0.0001798801637280778,1389814.1674916493,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,3,0.3238657061010599,1805.556,10.762303892021956,0.00017937173153369926,1393753.6191595024,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,4,0.32611322309821844,1805.556,10.836990592312343,0.0001806165098718724,1384148.1057149626,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,5,0.32111775199882686,1805.556,10.670987285871837,0.00017784978809786396,1405680.6177493702,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,6,0.3214797009713948,1805.556,10.683015125691856,0.0001780502520948643,1404097.9839040118,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+108,Embedded Pan-Tompkins firmware replay,7,0.3242321021389216,1805.556,10.774479511206131,0.0001795746585201022,1392178.6184102038,451389,2110,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,1,0.3094402689021081,1805.556,10.282935635408974,0.00017138226059014956,1458727.4035196682,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,2,0.3095564760733396,1805.556,10.286797288148566,0.0001714466214691428,1458179.7988069153,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,3,0.31073055998422205,1805.556,10.325812990044797,0.00017209688316741328,1452670.1204507216,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,4,0.31145523907616735,1805.556,10.349894627787807,0.00017249824379646345,1449290.117382201,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,5,0.31878805183805525,1805.556,10.593569576509017,0.00017655949294181694,1415953.3188191953,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,6,0.3142847300041467,1805.556,10.443920764711148,0.00017406534607851914,1436242.225303292,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+109,Embedded Pan-Tompkins firmware replay,7,0.3118464939761907,1805.556,10.362896325880472,0.00017271493876467453,1447471.780889938,451389,2527,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,1,0.313630994874984,1805.556,10.422196648843371,0.00017370327748072285,1439235.9408862873,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,2,0.31340519106015563,1805.556,10.414693016228428,0.00017357821693714048,1440272.889141008,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,3,0.31226923991926014,1805.556,10.376944495299846,0.0001729490749216641,1445512.2128478312,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,4,0.3117874579038471,1805.556,10.360934512267038,0.0001726822418711173,1447745.8555732057,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,5,0.3130728448741138,1805.556,10.403648899533898,0.00017339414832556497,1441801.82788291,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,6,0.3092444781213999,1805.556,10.276429358759293,0.0001712738226459882,1459650.962054684,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+111,Embedded Pan-Tompkins firmware replay,7,0.3113345440942794,1805.556,10.345883841684646,0.00017243139736141077,1449851.963305777,451389,2123,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,1,0.3104670138563961,1805.556,10.317055151645125,0.0001719509191940854,1453903.2485067358,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,2,0.31049439311027527,1805.556,10.317964985088535,0.00017196608308480893,1453775.0439818234,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,3,0.30610070400871336,1805.556,10.171959352422634,0.00016953265587371056,1474642.1490985884,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,4,0.30392844905145466,1805.556,10.09977366699636,0.000168329561116606,1485181.7965997006,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,5,0.305497569963336,1805.556,10.151916749079042,0.0001691986124846507,1477553.4877549862,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,6,0.3094491520896554,1805.556,10.283230830491728,0.00017138718050819547,1458685.5286299863,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+112,Embedded Pan-Tompkins firmware replay,7,0.31067314581014216,1805.556,10.323905073345014,0.00017206508455575023,1452938.5821967754,451389,2538,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,1,0.3151298491284251,1805.556,10.47200471638958,0.00017453341193982634,1432390.4931520629,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,2,0.3177428529597819,1805.556,10.558836822334456,0.0001759806137055743,1420611.0249067799,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,3,0.31516920193098485,1805.556,10.473312439968126,0.00017455520733280212,1432211.6413482695,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,4,0.31443644617684186,1805.556,10.448962408593536,0.00017414937347655894,1435549.2357464656,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,5,0.31725330906920135,1805.556,10.542568906282652,0.00017570948177137753,1422803.1263861146,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,6,0.31731087202206254,1805.556,10.544481767014567,0.0001757413627835761,1422545.0175202792,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+113,Embedded Pan-Tompkins firmware replay,7,0.315290295984596,1805.556,10.477336487528362,0.00017462227479213938,1431661.569508163,451389,1793,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,1,0.31852646893821657,1805.556,10.584876977669479,0.0001764146162944913,1417116.1395304773,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,2,0.3188568130135536,1805.556,10.595854562701582,0.00017659757604502637,1415647.9698014571,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,3,0.3192911189980805,1805.556,10.610286881096366,0.00017683811468493943,1413722.3779240588,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,4,0.31549185886979103,1805.556,10.484034575603006,0.00017473390959338344,1430746.9030010568,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,5,0.31916544609703124,1805.556,10.606110674951026,0.00017676851124918375,1414279.0377839673,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,6,0.31986211286857724,1805.556,10.629261441968366,0.00017715435736613943,1411198.7066922917,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+114,Embedded Pan-Tompkins firmware replay,7,0.31827120715752244,1805.556,10.576394434429808,0.00017627324057383013,1418252.70350828,451389,1879,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,1,0.31173807103186846,1805.556,10.359293348925265,0.00017265488914875444,1447975.2136332917,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,2,0.31131604383699596,1805.556,10.345269064055481,0.00017242115106759135,1449938.1221622673,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,3,0.31093082786537707,1805.556,10.332468044149627,0.0001722078007358271,1451734.4680773716,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,4,0.30994087597355247,1805.556,10.299571189380528,0.00017165951982300878,1456371.3114062354,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,5,0.3107728031463921,1805.556,10.327216762472904,0.0001721202793745484,1452472.6598658296,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,6,0.30562389199621975,1805.556,10.156114526369265,0.00016926857543948776,1476942.7777772793,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+115,Embedded Pan-Tompkins firmware replay,7,0.31088435696437955,1805.556,10.330923780742758,0.0001721820630123793,1451951.4729128657,451389,1952,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,1,0.30740871699526906,1805.556,10.215425619430327,0.00017025709365717213,1468367.6000213968,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,2,0.3096501799300313,1805.556,10.289911138619836,0.00017149851897699727,1457738.5361183903,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,3,0.3118557338602841,1805.556,10.363203374260918,0.00017272005623768195,1447428.8941636996,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,4,0.30803710501641035,1805.556,10.236307431608115,0.00017060512386013525,1465372.1666938558,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,5,0.31062743393704295,1805.556,10.322386033012865,0.0001720397672168811,1453152.396357516,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,6,0.31260874308645725,1805.556,10.388226443924992,0.00017313710739874988,1443942.340010499,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+116,Embedded Pan-Tompkins firmware replay,7,0.3133426560088992,1805.556,10.412614928882821,0.00017354358214804704,1440560.3301810913,451389,2387,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,1,0.32050228607840836,1805.556,10.650534884935444,0.00017750891474892406,1408379.9698376292,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,2,0.31917616399005055,1805.556,10.606466838692919,0.00017677444731154865,1414231.5464824962,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,3,0.3170401768293232,1805.556,10.53548635974702,0.00017559143932911698,1423759.6146781193,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,4,0.31283915694803,1805.556,10.39588327190173,0.00017326472119836217,1442878.840371592,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,5,0.31817510491237044,1805.556,10.573200883684708,0.00017622001472807847,1418681.0753918614,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,6,0.3084852290339768,1805.556,10.25119893375703,0.00017085331556261716,1463243.4798046155,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+117,Embedded Pan-Tompkins firmware replay,7,0.3151778979226947,1805.556,10.473601414390737,0.00017456002357317895,1432172.1255680006,451389,1535,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,1,0.31440990790724754,1805.556,10.448080521697943,0.0001741346753616324,1435670.40556865,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,2,0.3100305360276252,1805.556,10.302550661213228,0.00017170917768688713,1455950.13247269,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,3,0.31224545114673674,1805.556,10.376153976284426,0.00017293589960474043,1445622.3408291514,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,4,0.3137894859537482,1805.556,10.427463428010482,0.00017379105713350804,1438509.001115906,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,5,0.31247760099358857,1805.556,10.38386849237316,0.000173064474872886,1444548.340632139,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,6,0.3105560769326985,1805.556,10.320014785452187,0.00017200024642420313,1453486.2896848798,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+118,Embedded Pan-Tompkins firmware replay,7,0.31295424001291394,1805.556,10.399707569731891,0.00017332845949553154,1442348.2486812563,451389,2277,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,1,0.3097934680990875,1805.556,10.294672713527161,0.00017157787855878604,1457064.291154206,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,2,0.3107622649986297,1805.556,10.326866571802691,0.0001721144428633782,1452521.9141454976,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,3,0.30632012290880084,1805.556,10.17925080946149,0.0001696541801576915,1473585.8542809144,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,4,0.3111572901252657,1805.556,10.339993557395031,0.00017233322595658384,1450677.8864743288,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,5,0.31066640792414546,1805.556,10.32368116826547,0.00017206135280442447,1452970.0942440303,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,6,0.3043354069814086,1805.556,10.113297188724424,0.00016855495314540707,1483195.8084573927,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+119,Embedded Pan-Tompkins firmware replay,7,0.30926420795731246,1805.556,10.277084996222076,0.0001712847499370346,1459557.8420840246,451389,1987,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,1,0.31490301084704697,1805.556,10.46446670766391,0.00017440777846106515,1433422.306080288,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,2,0.31888713082298636,1805.556,10.596862046582427,0.00017661436744304044,1415513.3787777883,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,3,0.31840021698735654,1805.556,10.580681529258241,0.00017634469215430402,1417678.0539628977,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,4,0.318220472894609,1805.556,10.574708496261838,0.00017624514160436395,1418478.8171988386,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,5,0.3153451771941036,1805.556,10.479160231887693,0.00017465267053146154,1431412.409780276,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,6,0.31464908504858613,1805.556,10.456028560130601,0.00017426714266884335,1434579.09604377,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+121,Embedded Pan-Tompkins firmware replay,7,0.3165149020496756,1805.556,10.518031079058492,0.0001753005179843082,1426122.426075081,451389,1861,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,1,0.31770468200556934,1805.556,10.557568372475934,0.00017595947287459893,1420781.7056724622,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,2,0.31600873405113816,1805.556,10.501210731247488,0.0001750201788541248,1428406.7222235505,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,3,0.3174674748443067,1805.556,10.549685797980457,0.0001758280966330076,1421843.293462965,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,4,0.31730500888079405,1805.556,10.544286930368065,0.00017573811550613443,1422571.303214375,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,5,0.313799561932683,1805.556,10.427798260458816,0.00017379663767431362,1438462.8111648958,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,6,0.3142462579999119,1805.556,10.442642310731273,0.00017404403851218787,1436418.059113775,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+122,Embedded Pan-Tompkins firmware replay,7,0.31685580709017813,1805.556,10.529359613000477,0.00017548932688334128,1424588.0615075277,451389,2475,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,1,0.31552040693350136,1805.556,10.48498324948663,0.00017474972082477718,1430617.450031161,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,2,0.3164815742056817,1805.556,10.51692356943839,0.0001752820594906398,1426272.6072850036,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,3,0.31654719403013587,1805.556,10.519104166145027,0.0001753184027690838,1425976.942815759,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,4,0.31417178316041827,1805.556,10.440167455135756,0.0001740027909189293,1436758.5639271673,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,5,0.31629414297640324,1805.556,10.510695087044763,0.00017517825145074606,1427117.795329126,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,6,0.30880742403678596,1805.556,10.26190571890717,0.0001710317619817862,1461716.8010385311,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+123,Embedded Pan-Tompkins firmware replay,7,0.3091072079259902,1805.556,10.271867765696225,0.0001711977960949371,1460299.172667874,451389,1514,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,1,0.3131535709835589,1805.556,10.406331489587437,0.0001734388581597906,1441430.1538451838,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,2,0.31301504489965737,1805.556,10.401728162393988,0.00017336213603989982,1442068.0646347236,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,3,0.30528122815303504,1805.556,10.144727546075615,0.00016907879243459358,1478600.576690953,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,4,0.30938330199569464,1805.556,10.28104258175414,0.00017135070969590232,1458995.9997462356,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,5,0.31202428694814444,1805.556,10.368804521647995,0.00017281340869413324,1446647.0043564804,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,6,0.3070969539694488,1805.556,10.205065496814791,0.0001700844249469132,1469858.2781934917,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+124,Embedded Pan-Tompkins firmware replay,7,0.30813182005658746,1805.556,10.239454884476165,0.0001706575814079361,1464921.7335525549,451389,1619,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,1,0.3130525480955839,1805.556,10.402974422136468,0.0001733829070356078,1441895.3071807548,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,2,0.31658006785437465,1805.556,10.520196588343136,0.00017533660980571892,1425828.8686944018,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,3,0.3159471261315048,1805.556,10.499163453191308,0.00017498605755318847,1428685.2535323303,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,4,0.3113810659851879,1805.556,10.347429799525061,0.0001724571633254177,1449635.3481604182,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,5,0.3198206799570471,1805.556,10.627884594785664,0.0001771314099130944,1411381.5281132632,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,6,0.31616213801316917,1805.556,10.506308461654,0.00017510514102756666,1427713.6498273497,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+200,Embedded Pan-Tompkins firmware replay,7,0.3158487209584564,1805.556,10.495893374399566,0.00017493155623999278,1429130.3717496176,451389,2600,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,1,0.3164087610784918,1805.556,10.514503933807374,0.00017524173223012291,1426600.8262900896,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,2,0.3115418991073966,1805.556,10.352774406578249,0.00017254624010963748,1448886.9756950235,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,3,0.3167893060017377,1805.556,10.527149731220888,0.00017545249552034813,1424887.114079299,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,4,0.31478001503273845,1805.556,10.460379463148364,0.00017433965771913938,1433982.395461331,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,5,0.3178042718209326,1805.556,10.560877817833376,0.00017601463029722291,1420336.4775862293,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,6,0.3128064170014113,1805.556,10.394795298558826,0.00017324658830931376,1443029.8595759417,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+201,Embedded Pan-Tompkins firmware replay,7,0.3165088181849569,1805.556,10.517828907603759,0.00017529714846006267,1426149.8386949324,451389,1907,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,1,0.3124224981293082,1805.556,10.38203738225704,0.00017303395637095068,1444803.1198226162,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,2,0.31539521901868284,1805.556,10.480823159802837,0.00017468038599671395,1431185.2963543541,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,3,0.31869178893975914,1805.556,10.590370687137673,0.00017650617811896122,1416381.0165982156,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,4,0.3153378108981997,1805.556,10.47891544426868,0.00017464859073781133,1431445.847595237,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,5,0.31825616699643433,1805.556,10.575894638430523,0.0001762649106405087,1418319.7273442221,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,6,0.31775464210659266,1805.556,10.55922858465512,0.00017598714307758532,1420558.3182277442,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+202,Embedded Pan-Tompkins firmware replay,7,0.31565987411886454,1805.556,10.489617850197874,0.00017482696416996457,1429985.3640251579,451389,2127,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,1,0.31508056609891355,1805.556,10.470367003812019,0.0001745061167302003,1432614.5391597876,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,2,0.3148092459887266,1805.556,10.461350830062095,0.00017435584716770158,1433849.2460166316,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,3,0.312701917020604,1805.556,10.391322684666795,0.00017318871141111327,1443512.0970820843,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,4,0.314476212952286,1805.556,10.450283888806085,0.0001741713981467681,1435367.70480153,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,5,0.31521344487555325,1805.556,10.474782666687267,0.00017457971111145445,1432010.6180058692,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,6,0.3170012468472123,1805.556,10.534192686813778,0.00017556987811356297,1423934.4623699845,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+203,Embedded Pan-Tompkins firmware replay,7,0.31574301701039076,1805.556,10.492380751759262,0.00017487301252932104,1429608.81375611,451389,2929,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,1,0.312879771925509,1805.556,10.39723293851342,0.00017328721564189035,1442691.5400189809,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,2,0.31273111794143915,1805.556,10.392293053489533,0.00017320488422482557,1443377.3107431075,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,3,0.31387164792977273,1805.556,10.430193733003222,0.00017383656221672036,1438132.4435553865,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,4,0.31364446482621133,1805.556,10.422644265573972,0.0001737107377595662,1439174.1306517625,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,5,0.3151840828359127,1805.556,10.473806943764005,0.00017456344906273343,1432144.0218001003,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,6,0.3123228489421308,1805.556,10.378725963929032,0.00017297876606548387,1445264.096203337,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+205,Embedded Pan-Tompkins firmware replay,7,0.31301934411749244,1805.556,10.401871028674572,0.0001733645171445762,1442048.2583037112,451389,2648,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,1,0.32254618708975613,1805.556,10.718455271055214,0.00017864092118425356,1399455.3898551909,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,2,0.3215537630021572,1805.556,10.685476263339067,0.0001780912710556511,1403774.5843359071,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,3,0.32211820781230927,1805.556,10.704233193951644,0.00017840388656586073,1401314.762880507,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,4,0.32243048306554556,1805.556,10.714610338274046,0.0001785768389712341,1399957.5837506624,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,5,0.32140447199344635,1805.556,10.68051520950155,0.00017800858682502584,1404426.6316531033,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,6,0.32038820697925985,1805.556,10.64674394965074,0.00017744573249417898,1408881.4449691041,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+207,Embedded Pan-Tompkins firmware replay,7,0.3212684669997543,1805.556,10.675995660054442,0.00017793326100090737,1405021.178129957,451389,2083,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,1,0.30924578406848013,1805.556,10.27647275637466,0.00017127454593957768,1459644.797938598,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,2,0.3085271720774472,1805.556,10.25259273301234,0.0001708765455502057,1463044.5576660305,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,3,0.31194033310748637,1805.556,10.366014671629781,0.00017276691119382968,1447036.3466735906,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,4,0.31178943114355206,1805.556,10.361000084524171,0.0001726833347420695,1447736.6931407447,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,5,0.31373347504995763,1805.556,10.425602143050371,0.0001737600357175062,1438765.8184327404,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,6,0.31267301994375885,1805.556,10.390362412811085,0.00017317270688018473,1443645.5057145394,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+208,Embedded Pan-Tompkins firmware replay,7,0.3127855700440705,1805.556,10.394102538300794,0.00017323504230501324,1443126.0365892223,451389,2918,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,1,0.3159034720156342,1805.556,10.497712793697925,0.0001749618798949654,1428882.6809021605,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,2,0.31536114192567766,1805.556,10.479690752067873,0.00017466151253446452,1431339.9464617,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,3,0.31139863189309835,1805.556,10.348013528013476,0.00017246689213355794,1449553.5746443474,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,4,0.3151277790311724,1805.556,10.471935925482423,0.00017453226542470706,1432399.9026291766,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,5,0.31597795989364386,1805.556,10.500188082573253,0.0001750031347095542,1428545.8395640464,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,6,0.3134018210694194,1805.556,10.41458102887153,0.00017357635048119216,1440288.3763078584,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+209,Embedded Pan-Tompkins firmware replay,7,0.309956377139315,1805.556,10.300086304915993,0.0001716681050819332,1456298.4771147836,451389,3005,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,1,0.31726969801820815,1805.556,10.543113523530971,0.0001757185587255162,1422729.6297741449,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,2,0.3180863060988486,1805.556,10.57025003153096,0.00017617083385884934,1419077.1226087497,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,3,0.31800290779210627,1805.556,10.567478642327558,0.00017612464403879262,1419449.2847062098,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,4,0.31663272390142083,1805.556,10.521946388860412,0.00017536577314767354,1425591.753240684,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,5,0.31474447320215404,1805.556,10.459198381068902,0.00017431997301781504,1434144.3247840032,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,6,0.3175855320878327,1805.556,10.553608930030396,0.00017589348216717326,1421314.7464008597,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+210,Embedded Pan-Tompkins firmware replay,7,0.31821033312007785,1805.556,10.574371543837284,0.00017623952573062138,1418524.0170364508,451389,2625,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,1,0.3131699590012431,1805.556,10.4068760758872,0.00017344793459811997,1441354.724570527,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,2,0.3038847059942782,1805.556,10.098320051915692,0.00016830533419859487,1485395.5829172237,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,3,0.3100565110798925,1805.556,10.303413831968408,0.00017172356386614012,1455828.1599307882,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,4,0.31336001912131906,1805.556,10.413191918322745,0.00017355319863871242,1440480.5094974234,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,5,0.31393269798718393,1805.556,10.432222472873196,0.0001738703745478866,1437852.77192893,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,6,0.31210097414441407,1805.556,10.371352895542893,0.00017285588159238156,1446291.5447073714,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+212,Embedded Pan-Tompkins firmware replay,7,0.3115921779535711,1805.556,10.354445210901387,0.00017257408684835646,1448653.1817472626,451389,2748,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,1,0.30951888486742973,1805.556,10.285548103767363,0.00017142580172945605,1458356.895390518,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,2,0.31038426887243986,1805.556,10.314305472855116,0.00017190509121425192,1454290.8428954869,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,3,0.31117889820598066,1805.556,10.340711610362037,0.00017234519350603397,1450577.152250244,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,4,0.31000765203498304,1805.556,10.301790208721846,0.00017169650347869744,1456057.607084688,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,5,0.31019768910482526,1805.556,10.308105285180584,0.00017180175475300973,1455165.5794168792,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,6,0.3095042109489441,1805.556,10.285060478288486,0.00017141767463814143,1458426.0376168557,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+213,Embedded Pan-Tompkins firmware replay,7,0.30625520809553564,1805.556,10.177093640813212,0.00016961822734688686,1473898.2001546572,451389,3246,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,1,0.3142422300297767,1805.556,10.442508458218189,0.00017404180763696983,1436436.4711809347,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,2,0.31628681789152324,1805.556,10.510451668899439,0.00017517419448165731,1427150.8468456396,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,3,0.31649704999290407,1805.556,10.51743784162565,0.00017529063069376085,1426202.866693766,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,4,0.3147460510954261,1805.556,10.45925081566319,0.00017432084692771982,1434137.135093542,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,5,0.3157964621204883,1805.556,10.494156773442251,0.00017490261289070417,1429366.8680422963,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,6,0.31531816185452044,1805.556,10.478262491593297,0.0001746377081932216,1431535.0481088338,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+214,Embedded Pan-Tompkins firmware replay,7,0.3158658519387245,1805.556,10.496462649911424,0.0001749410441651904,1429052.8628829618,451389,2257,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,1,0.314779442967847,1805.556,10.46036045299665,0.0001743393408832775,1433985.001511382,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,2,0.31525109405629337,1805.556,10.476033777616204,0.00017460056296027005,1431839.5986895352,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,3,0.31471063499338925,1805.556,10.45807391163905,0.00017430123186065082,1434298.5263573371,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,4,0.31446590390987694,1805.556,10.449941311481126,0.00017416568852468542,1435414.7600350464,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,5,0.31464687013067305,1805.556,10.455954956722683,0.00017426591594537806,1434589.1945867373,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,6,0.31490946491248906,1805.556,10.464681181170421,0.00017441135301950704,1433392.9281085203,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+215,Embedded Pan-Tompkins firmware replay,7,0.3142897740472108,1805.556,10.444088382100942,0.00017406813970168237,1436219.175022204,451389,3361,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,1,0.31221712403930724,1805.556,10.375212644946174,0.0001729202107491029,1445753.5005132244,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,2,0.3118292191065848,1805.556,10.362322268816413,0.00017270537114694022,1447551.968648945,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,3,0.31181059195660055,1805.556,10.361703274446228,0.00017269505457410378,1447638.4434779775,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,4,0.312887443928048,1805.556,10.397487884996577,0.00017329146474994296,1442656.1652112892,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,5,0.31086934404447675,1805.556,10.330424889988793,0.00017217374816647988,1452021.5925035658,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,6,0.3101158509962261,1805.556,10.305385742548868,0.00017175642904248114,1455549.5907414714,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+217,Embedded Pan-Tompkins firmware replay,7,0.3101446251384914,1805.556,10.30634192919493,0.00017177236548658218,1455414.5499005106,451389,2202,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,1,0.3126062119845301,1805.556,10.388142333481657,0.0001731357055580276,1443954.031285654,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,2,0.31203235499560833,1805.556,10.369072629005414,0.00017281787715009024,1446609.5992075983,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,3,0.312949693063274,1805.556,10.399556471134897,0.00017332594118558162,1442369.2050362085,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,4,0.3114967041183263,1805.556,10.351272542695755,0.00017252120904492926,1449097.1943912886,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,5,0.31149691017344594,1805.556,10.3512793900642,0.00017252132316773665,1449096.2358138966,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,6,0.3122532421257347,1805.556,10.37641287644586,0.000172940214607431,1445586.2713452296,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+219,Embedded Pan-Tompkins firmware replay,7,0.31207271409220994,1805.556,10.37041379250081,0.00017284022987501353,1446422.5150636702,451389,2149,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,1,0.31186295696534216,1805.556,10.363443403539147,0.00017272405672565246,1447395.370044425,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,2,0.31453496194444597,1805.556,10.452236162526534,0.0001742039360421089,1435099.6061281275,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,3,0.31450655311346054,1805.556,10.451292115452322,0.00017418820192420536,1435229.236184335,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,4,0.3156953339930624,1805.556,10.490796208804236,0.00017484660348007062,1429824.7436559186,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,5,0.3135811919346452,1805.556,10.420541659233338,0.00017367569432055565,1439464.5202256772,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,6,0.3145773571450263,1805.556,10.453644987306724,0.00017422741645511206,1434906.1995326665,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+220,Embedded Pan-Tompkins firmware replay,7,0.31168027501553297,1805.556,10.357372743316727,0.0001726228790552788,1448243.716986917,451389,2047,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,1,0.3255421060603112,1805.556,10.818011938493557,0.0001803001989748926,1386576.3954859157,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,2,0.3242558480706066,1805.556,10.775268606587884,0.00017958781010979808,1392076.666267898,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,3,0.32581956102512777,1805.556,10.827231978131758,0.00018045386630219598,1385395.642237662,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,4,0.3229321208782494,1805.556,10.731280144562099,0.00017885466907603497,1397782.9110724507,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,5,0.3210886169690639,1805.556,10.670019106659574,0.00017783365177765956,1405808.1667949327,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,6,0.32071322901174426,1805.556,10.657544679148502,0.00017762574465247507,1407453.6351086113,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+221,Embedded Pan-Tompkins firmware replay,7,0.3225911499466747,1805.556,10.71994942100964,0.000178665823683494,1399260.333318555,451389,2420,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,1,0.3277953159995377,1805.556,10.892887819581482,0.00018154813032635804,1377045.3022600133,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,2,0.3259461021516472,1805.556,10.831437036070236,0.00018052395060117062,1384857.7940348866,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,3,0.3245938748586923,1805.556,10.78650149401156,0.00017977502490019269,1390626.980242638,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,4,0.32511587999761105,1805.556,10.803848122050306,0.0001800641353675051,1388394.19348977,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,5,0.32483625784516335,1805.556,10.794556065117781,0.000179909267751963,1389589.336468589,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,6,0.324449656996876,1805.556,10.781709024706274,0.0001796951504117712,1391245.113889414,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+222,Embedded Pan-Tompkins firmware replay,7,0.32391870114952326,1805.556,10.764064957814321,0.00017940108263023868,1393525.592681466,451389,2485,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,1,0.3085354489739984,1805.556,10.252867780583879,0.00017088112967639796,1463005.3094418996,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,2,0.30946092307567596,1805.556,10.283621989315511,0.0001713936998219252,1458630.0445100681,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,3,0.3103220241609961,1805.556,10.312237033722445,0.00017187061722870743,1454582.5460516394,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,4,0.3099856940098107,1805.556,10.301060526834194,0.00017168434211390325,1456160.7478108783,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,5,0.3083142989780754,1805.556,10.245518797912954,0.00017075864663188258,1464054.7048779558,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,6,0.3107113689184189,1805.556,10.32517525632278,0.00017208625427204632,1452759.8445183309,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+223,Embedded Pan-Tompkins firmware replay,7,0.31125112902373075,1805.556,10.343111895407201,0.0001723851982567867,1450240.5225511156,451389,2603,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,1,0.3203873229213059,1805.556,10.646714571732117,0.00017744524286220195,1408885.332553782,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,2,0.32038504909723997,1805.556,10.64663901082791,0.0001774439835137985,1408895.3316388964,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,3,0.32061448390595615,1805.556,10.654263304133114,0.00017757105506888523,1407887.1125872252,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,4,0.3187289140187204,1805.556,10.59160438176563,0.00017652673969609383,1416216.0386035384,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,5,0.318169048987329,1805.556,10.572999640686714,0.0001762166606781119,1418708.0781008855,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,6,0.3204863271676004,1805.556,10.650004558183753,0.0001775000759697292,1408450.1014108574,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+228,Embedded Pan-Tompkins firmware replay,7,0.317976278020069,1805.556,10.566593714736147,0.00017610989524560245,1419568.1602748702,451389,1364,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,1,0.3092706720344722,1805.556,10.277299802425587,0.00017128833004042646,1459527.3358143924,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,2,0.31208806415088475,1805.556,10.37092388663275,0.0001728487314438792,1446351.372738714,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,3,0.30914901895448565,1805.556,10.273257177993449,0.00017122095296655748,1460101.67370596,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,4,0.31232378585264087,1805.556,10.378757098178319,0.00017297928496963865,1445259.7606926174,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,5,0.31085301004350185,1805.556,10.32988209870539,0.00017216470164508986,1452097.8900504487,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,6,0.3134641908109188,1805.556,10.416653622848102,0.00017361089371413505,1440001.8031797362,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+230,Embedded Pan-Tompkins firmware replay,7,0.3111749910749495,1805.556,10.340581773424347,0.00017234302955707243,1450595.3657801459,451389,2255,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,1,0.3153485949151218,1805.556,10.479273805358186,0.00017465456342263645,1431396.8962553786,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,2,0.3117202299181372,1805.556,10.35870047513798,0.00017264500791896634,1448058.08759522,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,3,0.3090975428931415,1805.556,10.27154658929908,0.00017119244315498468,1460344.834109698,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,4,0.3121946139726788,1805.556,10.374464618300804,0.00017290774363834673,1445857.743207263,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,5,0.31438320502638817,1805.556,10.447193164644736,0.00017411988607741227,1435792.3476291047,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,6,0.3104661041870713,1805.556,10.317024922641158,0.00017195041537735264,1453907.5084602975,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+231,Embedded Pan-Tompkins firmware replay,7,0.3169296719133854,1805.556,10.531814197290542,0.00017553023662150906,1424256.0416475027,451389,1570,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,1,0.3197106709703803,1805.556,10.62422891243629,0.00017707048187393817,1411867.1692438414,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,2,0.32054141885600984,1805.556,10.651835296917177,0.00017753058828195295,1408208.03006044,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,3,0.3191758019383997,1805.556,10.60645480744102,0.00017677424679068369,1414233.1506920352,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,4,0.3220668639987707,1805.556,10.702526999952504,0.0001783754499992084,1401538.1601061663,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,5,0.3220603840891272,1805.556,10.702311667623508,0.00017837186112705847,1401566.3592920585,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,6,0.32115447893738747,1805.556,10.672207749991275,0.00017787012916652126,1405519.8653729602,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+232,Embedded Pan-Tompkins firmware replay,7,0.32091509201563895,1805.556,10.664252740395943,0.0001777375456732657,1406568.3142692547,451389,1693,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,1,0.30293095600791276,1805.556,10.066626214016495,0.00016777710356694157,1490072.2129837712,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,2,0.30446924711577594,1805.556,10.117744798248603,0.00016862907997081006,1482543.8177286822,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,3,0.31172167090699077,1805.556,10.35874836029425,0.00017264580600490417,1448051.393689219,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,4,0.31165586109273136,1805.556,10.356561450081793,0.0001726093575013632,1448357.1668356715,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,5,0.3107205359265208,1805.556,10.325479882978566,0.0001720913313829761,1452716.98458561,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,6,0.31097170105203986,1805.556,10.333826291249007,0.00017223043818748345,1451543.656457865,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+233,Embedded Pan-Tompkins firmware replay,7,0.3102753919083625,1805.556,10.310687408477914,0.00017184479014129857,1454801.1597816765,451389,3073,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,1,0.31370332883670926,1805.556,10.424600361441327,0.00017374333935735544,1438904.0807244978,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,2,0.31394354114308953,1805.556,10.432582799196132,0.00017387637998660222,1437803.11057352,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,3,0.3136711409315467,1805.556,10.42353073285614,0.000173725512214269,1439051.736348636,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,4,0.3102446300908923,1805.556,10.309665169872071,0.0001718277528312012,1454945.4082984664,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,5,0.31225812202319503,1805.556,10.376575039152318,0.00017294291731920528,1445563.680058481,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,6,0.30653416202403605,1805.556,10.186363492155415,0.00016977272486925693,1472556.9150906107,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+234,Embedded Pan-Tompkins firmware replay,7,0.31170927500352263,1805.556,10.358336434988091,0.00017263894058313484,1448108.9790956615,451389,2751,controlled offline execution time of the firmware-equivalent implementation
+100,Hamilton,1,0.20945642585866153,1805.556,6.960396438282552,0.00011600660730470921,2155049.663191481,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,2,0.21060337591916323,1805.556,6.998510461680387,0.00011664184102800646,2143313.221024807,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,3,0.20977659989148378,1805.556,6.971036065061968,0.00011618393441769946,2151760.4929887364,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,4,0.20927427895367146,1805.556,6.954343558006668,0.00011590572596677779,2156925.362528317,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,5,0.2085605259053409,1805.556,6.930625001008251,0.00011551041668347086,2164306.970557177,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,6,0.20932965818792582,1805.556,6.956183852107356,0.0001159363975351226,2156354.7368656443,451389,2272,controlled offline execution time of the Hamilton comparator
+100,Hamilton,7,0.20814047404564917,1805.556,6.916666358029853,0.00011527777263383088,2168674.7955661993,451389,2272,controlled offline execution time of the Hamilton comparator
+101,Hamilton,1,0.22747720405459404,1805.556,7.559240612462666,0.00012598734354104445,1984326.3059082949,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,2,0.22789835394360125,1805.556,7.573235743790874,0.0001262205957298479,1980659.3254802828,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,3,0.22710325894877315,1805.556,7.546814132004982,0.00012578023553341637,1987593.6703392626,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,4,0.22830925579182804,1805.556,7.586890324924667,0.0001264481720820778,1977094.614208614,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,5,0.22747925808653235,1805.556,7.559308869507199,0.00012598848115845333,1984308.3883643278,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,6,0.22822930291295052,1805.556,7.584233429911357,0.00012640389049852263,1977787.2264376383,451389,1868,controlled offline execution time of the Hamilton comparator
+101,Hamilton,7,0.22858084389008582,1805.556,7.595915404122136,0.00012659859006870227,1974745.5312443092,451389,1868,controlled offline execution time of the Hamilton comparator
+102,Hamilton,1,0.24363082507625222,1805.556,8.096037732740017,0.0001349339622123336,1852758.163334722,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,2,0.24389912118203938,1805.556,8.104953416522314,0.00013508255694203857,1850720.0756295307,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,3,0.24302308191545308,1805.556,8.075841964983187,0.00013459736608305314,1857391.4726216695,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,4,0.24430920812301338,1805.556,8.118580917667911,0.00013530968196113184,1847613.5364194657,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,5,0.24327828013338149,1805.556,8.08432239598378,0.00013473870659972965,1855443.0742954868,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,6,0.24381063994951546,1805.556,8.102013117826823,0.00013503355196378038,1851391.719793142,451389,2187,controlled offline execution time of the Hamilton comparator
+102,Hamilton,7,0.2440308639779687,1805.556,8.109331329894017,0.00013515552216490027,1849720.9436620763,451389,2187,controlled offline execution time of the Hamilton comparator
+103,Hamilton,1,0.19635892799124122,1805.556,6.525156616285772,0.00010875261027142953,2298795.3978855223,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,2,0.19632025109604,1805.556,6.52387135362315,0.0001087311892270525,2299248.281723011,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,3,0.19652501214295626,1805.556,6.530675719045754,0.00010884459531742923,2296852.6757889246,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,4,0.19649345893412828,1805.556,6.529627181902803,0.00010882711969838004,2297221.5077720317,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,5,0.1963200499303639,1805.556,6.523864668734635,0.00010873107781224393,2299250.6377219795,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,6,0.19591657910495996,1805.556,6.510457026144632,0.00010850761710241054,2303985.717095304,451389,2081,controlled offline execution time of the Hamilton comparator
+103,Hamilton,7,0.19348874897696078,1805.556,6.429778383288941,0.00010716297305481568,2332895.3357063057,451389,2081,controlled offline execution time of the Hamilton comparator
+104,Hamilton,1,0.2343492761719972,1805.556,7.7876047989205714,0.00012979341331534284,1926137.803253592,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,2,0.23470281693153083,1805.556,7.799353227422384,0.00012998922045703973,1923236.3969951088,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,3,0.22985034412704408,1805.556,7.638101863150545,0.00012730169771917575,1963838.69562756,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,4,0.23156477021984756,1805.556,7.695073546979907,0.00012825122578299846,1949299.1078541495,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,5,0.22916973498649895,1805.556,7.615484703432038,0.00012692474505720063,1969671.0825563096,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,6,0.23294108710251749,1805.556,7.740809604438216,0.0001290134934073036,1937781.804037617,451389,2240,controlled offline execution time of the Hamilton comparator
+104,Hamilton,7,0.23428936395794153,1805.556,7.785613870451258,0.00012976023117418763,1926630.3530579011,451389,2240,controlled offline execution time of the Hamilton comparator
+105,Hamilton,1,0.1878282600082457,1805.556,6.241676026938373,0.00010402793378230622,2403200.668420098,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,2,0.18755265418440104,1805.556,6.232517435661958,0.00010387529059436596,2406732.135905665,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,3,0.18422545702196658,1805.556,6.121952141787901,0.00010203253569646501,2450198.834063294,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,4,0.18686582706868649,1805.556,6.209693647896376,0.00010349489413160626,2415578.1026462503,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,5,0.1857979791238904,1805.556,6.174208248004174,0.00010290347080006956,2429461.300539836,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,6,0.18659165385179222,1805.556,6.200582663239208,0.00010334304438732014,2419127.4940868123,451389,2594,controlled offline execution time of the Hamilton comparator
+105,Hamilton,7,0.18706378201022744,1805.556,6.216271841257567,0.0001036045306876261,2413021.8856332167,451389,2594,controlled offline execution time of the Hamilton comparator
+106,Hamilton,1,0.22591121587902308,1805.556,7.507201633591749,0.00012512002722652916,1998081.4066430493,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,2,0.22690741391852498,1805.556,7.540306052601801,0.00012567176754336336,1989309.1733092468,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,3,0.2262727809138596,1805.556,7.519216714868758,0.00012532027858114597,1994888.6391768018,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,4,0.22421267395839095,1805.556,7.450757792892304,0.00012417929654820508,2013218.0399568675,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,5,0.22568118502385914,1805.556,7.499557533209464,0.00012499262555349107,2000117.9981055085,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,6,0.22696415800601244,1805.556,7.542191701814148,0.00012570319503023582,1988811.819300748,451389,1989,controlled offline execution time of the Hamilton comparator
+106,Hamilton,7,0.22491217800416052,1805.556,7.4740028446914035,0.00012456671407819005,2006956.6886309288,451389,1989,controlled offline execution time of the Hamilton comparator
+107,Hamilton,1,0.18809446296654642,1805.556,6.250522153836704,0.00010417536923061174,2399799.509676592,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,2,0.18829042185097933,1805.556,6.257034016701093,0.00010428390027835156,2397301.974060303,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,3,0.18762581492774189,1805.556,6.234948622842223,0.00010391581038070371,2405793.6812897422,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,4,0.18821741687133908,1805.556,6.254608005667143,0.00010424346676111905,2398231.8294621943,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,5,0.18842600705102086,1805.556,6.26153961608571,0.00010435899360142852,2395576.953863782,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,6,0.18827547202818096,1805.556,6.256537222711928,0.00010427562037853213,2397492.3293908215,451389,2125,controlled offline execution time of the Hamilton comparator
+107,Hamilton,7,0.1880346001125872,1805.556,6.2485328656409616,0.00010414221442734936,2400563.5118734916,451389,2125,controlled offline execution time of the Hamilton comparator
+108,Hamilton,1,0.24458535318262875,1805.556,8.127757428159374,0.00013546262380265622,1845527.518824701,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,2,0.24510250892490149,1805.556,8.144942907056933,0.0001357490484509489,1841633.5352091559,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,3,0.24404315184801817,1805.556,8.109739665167455,0.00013516232775279092,1849627.8079587738,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,4,0.24506561900489032,1805.556,8.143717026939855,0.00013572861711566426,1841910.7577509372,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,5,0.24492212291806936,1805.556,8.138948542766972,0.00013564914237944951,1842989.9047992383,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,6,0.24590705195441842,1805.556,8.17167848422597,0.00013619464140376616,1835608.1959116403,451389,2083,controlled offline execution time of the Hamilton comparator
+108,Hamilton,7,0.24242827482521534,1805.556,8.056076072696122,0.00013426793454493537,1861948.653990299,451389,2083,controlled offline execution time of the Hamilton comparator
+109,Hamilton,1,0.1741016150917858,1805.556,5.785529169689085,9.642548616148477e-05,2592675.546186227,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,2,0.17362983897328377,1805.556,5.769851690225629,9.616419483709382e-05,2599720.2017186387,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,3,0.17380108800716698,1805.556,5.775542425950798,9.62590404325133e-05,2597158.6551943,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,4,0.1714028271380812,1805.556,5.695846392072509,9.493077320120849e-05,2633497.985633361,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,5,0.17307001794688404,1805.556,5.751248411466076,9.585414019110126e-05,2608129.388063814,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,6,0.17380227497778833,1805.556,5.7755818698878905,9.625969783146484e-05,2597140.918078816,451389,2527,controlled offline execution time of the Hamilton comparator
+109,Hamilton,7,0.17377729108557105,1805.556,5.7747516361354965,9.624586060225828e-05,2597514.307998552,451389,2527,controlled offline execution time of the Hamilton comparator
+111,Hamilton,1,0.2088495260104537,1805.556,6.9402286944449365,0.00011567047824074895,2161312.063391546,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,2,0.2049632640555501,1805.556,6.811085252040372,0.0001135180875340062,2202292.2111430783,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,3,0.20875779911875725,1805.556,6.937180540025031,0.00011561967566708385,2162261.7306058863,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,4,0.20886427792720497,1805.556,6.940718911865541,0.00011567864853109234,2161159.4116506684,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,5,0.2096087250392884,1805.556,6.96545745596221,0.00011609095759937017,2153483.8300046576,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,6,0.2087365509942174,1805.556,6.936474448675668,0.0001156079074779278,2162481.83583576,451389,2125,controlled offline execution time of the Hamilton comparator
+111,Hamilton,7,0.20537202106788754,1805.556,6.824668558645233,0.00011374447597742055,2197908.9344930258,451389,2125,controlled offline execution time of the Hamilton comparator
+112,Hamilton,1,0.17274228297173977,1805.556,5.740357528819037,9.56726254803173e-05,2613077.656695357,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,2,0.17410554504022002,1805.556,5.7856597648664465,9.64276627477741e-05,2592617.0237468593,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,3,0.1770940509159118,1805.556,5.884970089520739,9.808283482534565e-05,2548865.9707396356,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,4,0.17590039991773665,1805.556,5.845304158422225,9.742173597370375e-05,2566162.443127481,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,5,0.17377032502554357,1805.556,5.774520148659257,9.624200247765429e-05,2597618.4364830274,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,6,0.17270431481301785,1805.556,5.739095818009007,9.565159696681678e-05,2613652.1284294855,451389,2539,controlled offline execution time of the Hamilton comparator
+112,Hamilton,7,0.17553251003846526,1805.556,5.8330788977511165,9.721798162918529e-05,2571540.73567959,451389,2539,controlled offline execution time of the Hamilton comparator
+113,Hamilton,1,0.23168367287144065,1805.556,7.699024772583314,0.00012831707954305525,1948298.705755032,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,2,0.23262501205317676,1805.556,7.7303061899994265,0.00012883843649999044,1940414.7301959733,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,3,0.22840625699609518,1805.556,7.590113748765317,0.00012650189581275527,1976254.9675148213,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,4,0.2323694380465895,1805.556,7.721813271255707,0.0001286968878542618,1942548.916047633,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,5,0.22978455177508295,1805.556,7.635915533223548,0.00012726525888705914,1964400.9856756048,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,6,0.23059931490570307,1805.556,7.66299073213026,0.000127716512202171,1957460.282067978,451389,1795,controlled offline execution time of the Hamilton comparator
+113,Hamilton,7,0.22968324995599687,1805.556,7.632549196679478,0.0001272091532779913,1965267.3849158697,451389,1795,controlled offline execution time of the Hamilton comparator
+114,Hamilton,1,0.23966003698296845,1805.556,7.9640854224283855,0.0001327347570404731,1883455.4383052113,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,2,0.23897630395367742,1805.556,7.941364453509415,0.00013235607422515692,1888844.176314218,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,3,0.23854939197190106,1805.556,7.927177843453243,0.00013211963072422072,1892224.483444374,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,4,0.24080491112545133,1805.556,8.002130461490577,0.00013336884102484295,1874500.806027338,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,5,0.24160167598165572,1805.556,8.02860756404085,0.00013381012606734753,1868318.9930945386,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,6,0.23921206314116716,1805.556,7.949198910734438,0.00013248664851224064,1886982.5964153823,451389,1880,controlled offline execution time of the Hamilton comparator
+114,Hamilton,7,0.24024712899699807,1805.556,7.98359493686149,0.00013305991561435816,1878852.8374282473,451389,1880,controlled offline execution time of the Hamilton comparator
+115,Hamilton,1,0.18277931702323258,1805.556,6.0738958090438375,0.00010123159681739728,2469584.673755101,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,2,0.1827264348976314,1805.556,6.072138495764121,0.00010120230826273536,2470299.3863634514,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,3,0.1823405148461461,1805.556,6.059314078748466,0.00010098856797914111,2475527.7255900563,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,4,0.18341609300114214,1805.556,6.095056359408696,0.0001015842726568116,2461010.8775852574,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,5,0.18202388403005898,1805.556,6.048792195757727,0.00010081320326262879,2479833.909738234,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,6,0.18192668608389795,1805.556,6.045562234034213,0.00010075937056723688,2481158.810268417,451389,2011,controlled offline execution time of the Hamilton comparator
+115,Hamilton,7,0.18242844589985907,1805.556,6.062236094583355,0.00010103726824305592,2474334.5138607505,451389,2011,controlled offline execution time of the Hamilton comparator
+116,Hamilton,1,0.1868451728951186,1805.556,6.2090072939898375,0.00010348345489983063,2415845.1246336303,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,2,0.1870226429309696,1805.556,6.214904758344895,0.00010358174597241493,2413552.6742962804,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,3,0.18679729499854147,1805.556,6.207416275049064,0.00010345693791748441,2416464.3283700896,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,4,0.1865998760331422,1805.556,6.200855892582967,0.00010334759820971612,2419020.8996699885,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,5,0.18523817299865186,1805.556,6.155605464421547,0.00010259342440702578,2436803.3472414194,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,6,0.1849323499482125,1805.556,6.145442731708543,0.00010242404552847572,2440833.094514857,451389,2390,controlled offline execution time of the Hamilton comparator
+116,Hamilton,7,0.1845686451997608,1805.556,6.13335654611967,0.00010222260910199451,2445642.9179043733,451389,2390,controlled offline execution time of the Hamilton comparator
+117,Hamilton,1,0.2121782370377332,1805.556,7.050844295199923,0.00011751407158666537,2127404.800331743,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,2,0.2136956760659814,1805.556,7.101269948956932,0.00011835449914928221,2112298.237895219,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,3,0.21653652912937105,1805.556,7.195673658287122,0.00011992789430478537,2084585.9209755547,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,4,0.2164282959420234,1805.556,7.192076987100596,0.00011986794978500993,2085628.3973187944,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,5,0.2167849380057305,1805.556,7.203928474300343,0.00012006547457167239,2082197.2418954123,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,6,0.2153941160067916,1805.556,7.157710400789283,0.00011929517334648806,2095642.2040134433,451389,1561,controlled offline execution time of the Hamilton comparator
+117,Hamilton,7,0.21489538089372218,1805.556,7.141137053419185,0.00011901895089031975,2100505.8281045007,451389,1561,controlled offline execution time of the Hamilton comparator
+118,Hamilton,1,0.20176720689050853,1805.556,6.704877840083892,0.0001117479640013982,2237177.2249637763,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,2,0.202143844217062,1805.556,6.717393785085436,0.00011195656308475727,2233008.8840860208,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,3,0.2017661731224507,1805.556,6.70484348718458,0.00011174739145307635,2237188.687352734,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,4,0.20296591892838478,1805.556,6.744711953383383,0.00011241186588972305,2223964.5078505506,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,5,0.2027232381515205,1805.556,6.736647486475761,0.00011227745810792935,2226626.824412801,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,6,0.20238841394893825,1805.556,6.725521023405696,0.0001120920170567616,2230310.476734521,451389,2278,controlled offline execution time of the Hamilton comparator
+118,Hamilton,7,0.20186542393639684,1805.556,6.70814166726693,0.00011180236112111551,2236088.7327699186,451389,2278,controlled offline execution time of the Hamilton comparator
+119,Hamilton,1,0.18561799195595086,1805.556,6.168227137434148,0.00010280378562390248,2431817.0627937806,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,2,0.18546827603131533,1805.556,6.163251963317072,0.00010272086605528454,2433780.103308802,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,3,0.18828389490954578,1805.556,6.256817121469922,0.00010428028535783203,2397385.077554581,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,4,0.18845130084082484,1805.556,6.262380147970759,0.0001043730024661793,2395255.4213529425,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,5,0.1884600860066712,1805.556,6.26267208571779,0.00010437786809529651,2395143.7652640226,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,6,0.18909088103100657,1805.556,6.28363388444357,0.00010472723140739283,2387153.719623225,451389,1988,controlled offline execution time of the Hamilton comparator
+119,Hamilton,7,0.1880566719919443,1805.556,6.249266330989822,0.00010415443884983036,2400281.7619751133,451389,1988,controlled offline execution time of the Hamilton comparator
+121,Hamilton,1,0.2317677631508559,1805.556,7.701819156565265,0.00012836365260942108,1947591.8215001898,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,2,0.23170848400332034,1805.556,7.6998492653782105,0.00012833082108963683,1948090.0837171404,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,3,0.23129112692549825,1805.556,7.685980172052207,0.00012809966953420345,1951605.346907225,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,4,0.2316595281008631,1805.556,7.6982224234816234,0.00012830370705802706,1948501.7676608064,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,5,0.23176278080791235,1805.556,7.701653589517434,0.0001283608931586239,1947633.690044979,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,6,0.23186781792901456,1805.556,7.7051440529902555,0.00012841906754983758,1946751.403587155,451389,1865,controlled offline execution time of the Hamilton comparator
+121,Hamilton,7,0.23184404498897493,1805.556,7.704354060100321,0.000128405901001672,1946951.0205511868,451389,1865,controlled offline execution time of the Hamilton comparator
+122,Hamilton,1,0.207322504138574,1805.556,6.88948459550102,0.00011482474325835033,2177231.0819586297,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,2,0.20923411403782666,1805.556,6.9530088472856,0.00011588348078809334,2157339.4093775502,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,3,0.20726335421204567,1805.556,6.887518998426379,0.00011479198330710632,2177852.431830259,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,4,0.20797152793966234,1805.556,6.911052150351327,0.00011518420250585544,2170436.523075212,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,5,0.2068625190295279,1805.556,6.874198940255342,0.00011456998233758903,2182072.4320560363,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,6,0.20809282595291734,1805.556,6.915082975645751,0.00011525138292742918,2169171.368272592,451389,2476,controlled offline execution time of the Hamilton comparator
+122,Hamilton,7,0.20682244491763413,1805.556,6.872867247018673,0.00011454778745031121,2182495.2324674586,451389,2476,controlled offline execution time of the Hamilton comparator
+123,Hamilton,1,0.21122784703038633,1805.556,7.019262111960626,0.00011698770186601043,2136976.7592010023,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,2,0.2117631700821221,1805.556,7.03705130437789,0.00011728418840629816,2131574.6256771213,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,3,0.21288846409879625,1805.556,7.074445680957984,0.00011790742801596641,2120307.466686037,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,4,0.21279998403042555,1805.556,7.071505420948191,0.00011785842368246985,2121189.0689590545,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,5,0.21256743208505213,1805.556,7.063777542819568,0.00011772962571365946,2123509.6814802326,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,6,0.20844951807521284,1805.556,6.926936126330488,0.00011544893543884146,2165459.551876391,451389,1518,controlled offline execution time of the Hamilton comparator
+123,Hamilton,7,0.21245375415310264,1805.556,7.059999938626195,0.00011766666564376992,2124645.91082119,451389,1518,controlled offline execution time of the Hamilton comparator
+124,Hamilton,1,0.21055694902315736,1805.556,6.996967660592881,0.00011661612767654803,2143785.8123141574,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,2,0.2080391370691359,1805.556,6.9132988531777215,0.00011522164755296202,2169731.1686598356,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,3,0.21128920512273908,1805.556,7.021301088066139,0.0001170216848011023,2136356.184111657,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,4,0.21230916189961135,1805.556,7.055195028000616,0.00011758658380001027,2126092.8918999527,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,5,0.21259103808552027,1805.556,7.0645619881804915,0.0001177426998030082,2123273.8880479857,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,6,0.21230504219420254,1805.556,7.0550581270545765,0.00011758430211757627,2126134.147992111,451389,1609,controlled offline execution time of the Hamilton comparator
+124,Hamilton,7,0.2124159699305892,1805.556,7.058744340156357,0.00011764573900260595,2125023.839532873,451389,1609,controlled offline execution time of the Hamilton comparator
+200,Hamilton,1,0.2060426720418036,1805.556,6.846954800907984,0.0001141159133484664,2190754.932106581,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,2,0.20127596915699542,1805.556,6.688553636342337,0.00011147589393903895,2242637.319748371,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,3,0.2061928678303957,1805.556,6.851945921269538,0.00011419909868782563,2189159.134113653,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,4,0.2064489061012864,1805.556,6.86045426786939,0.00011434090446448983,2186444.135376251,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,5,0.20633074990473688,1805.556,6.856527847535171,0.00011427546412558618,2187696.212069247,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,6,0.20464053400792181,1805.556,6.800360686943694,0.0001133393447823949,2205765.3542993898,451389,2595,controlled offline execution time of the Hamilton comparator
+200,Hamilton,7,0.2063552001491189,1805.556,6.8573403477638655,0.00011428900579606442,2187437.0002491423,451389,2595,controlled offline execution time of the Hamilton comparator
+201,Hamilton,1,0.22976640705019236,1805.556,7.635312570206374,0.00012725520950343958,1964556.1150346678,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,2,0.2302012969739735,1805.556,7.649764293346986,0.0001274960715557831,1960844.7299540362,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,3,0.23022984620183706,1805.556,7.650713005916307,0.00012751188343193844,1960601.579016293,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,4,0.23050485411658883,1805.556,7.659851728218526,0.00012766419547030877,1958262.4484414912,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,5,0.2291040369309485,1805.556,7.613301507046533,0.00012688835845077554,1970235.9069999615,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,6,0.23033895390108228,1805.556,7.654338737798737,0.0001275723122966456,1959672.874931291,451389,1893,controlled offline execution time of the Hamilton comparator
+201,Hamilton,7,0.2290907569695264,1805.556,7.61286020382175,0.00012688100339702918,1970350.1178794552,451389,1893,controlled offline execution time of the Hamilton comparator
+202,Hamilton,1,0.2405699349474162,1805.556,7.99432202426564,0.00013323870040442731,1876331.7207475018,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,2,0.24100220180116594,1805.556,8.008686580792817,0.00013347810967988028,1872966.2908740125,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,3,0.23901676293462515,1805.556,7.9427089362376515,0.0001323784822706275,1888524.4468123852,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,4,0.23989234515465796,1805.556,7.9718051997719686,0.00013286341999619949,1881631.528129798,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,5,0.23779540602117777,1805.556,7.902122316489029,0.00013170203860815048,1898224.2237253308,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,6,0.2394735449925065,1805.556,7.95788815165544,0.00013263146919425734,1884922.1947005657,451389,2123,controlled offline execution time of the Hamilton comparator
+202,Hamilton,7,0.24114223406650126,1805.556,8.01333995954159,0.00013355566599235983,1871878.6518147532,451389,2123,controlled offline execution time of the Hamilton comparator
+203,Hamilton,1,0.20532648195512593,1805.556,6.823155259270582,0.00011371925432117637,2198396.406064421,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,2,0.1983397570438683,1805.556,6.590981073216282,0.0001098496845536047,2275837.213515205,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,3,0.20213539409451187,1805.556,6.7171129810821215,0.00011195188301803536,2233102.233391869,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,4,0.2049443458672613,1805.556,6.810456586245831,0.00011350760977076384,2202495.5023270384,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,5,0.1996889258734882,1805.556,6.635814980210689,0.00011059691633684482,2260460.8544290285,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,6,0.2043895279057324,1805.556,6.792019563139522,0.00011320032605232537,2208474.204256627,451389,2914,controlled offline execution time of the Hamilton comparator
+203,Hamilton,7,0.20519931707531214,1805.556,6.818929473535425,0.00011364882455892375,2199758.782990157,451389,2914,controlled offline execution time of the Hamilton comparator
+205,Hamilton,1,0.18416042113676667,1805.556,6.119790949827089,0.00010199651583045149,2451064.1168917404,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,2,0.18479055911302567,1805.556,6.140730914345243,0.00010234551523908738,2442705.9594744314,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,3,0.1857981770299375,1805.556,6.1742148245727355,0.0001029035804095456,2429458.71275835,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,4,0.18536595604382455,1805.556,6.159851792262036,0.0001026641965377006,2435123.523400822,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,5,0.18532544514164329,1805.556,6.158505584151694,0.00010264175973586158,2435655.8251081263,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,6,0.1852307659573853,1805.556,6.1553593228031245,0.00010258932204671874,2436900.7905730293,451389,2645,controlled offline execution time of the Hamilton comparator
+205,Hamilton,7,0.18493659608066082,1805.556,6.145583833921323,0.00010242639723202205,2440777.0531427157,451389,2645,controlled offline execution time of the Hamilton comparator
+207,Hamilton,1,0.24850697699002922,1805.556,8.258075971834577,0.00013763459953057628,1816403.730258692,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,2,0.24619768001139164,1805.556,8.18133627574193,0.00013635560459569884,1833441.3223516732,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,3,0.24654228310100734,1805.556,8.19278769867035,0.0001365464616445058,1830878.64005489,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,4,0.24891082919202745,1805.556,8.271496287859057,0.0001378582714643176,1813456.6562058518,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,5,0.24624678981490433,1805.556,8.182968231887717,0.00013638280386479528,1833075.6731460108,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,6,0.2501106639392674,1805.556,8.311367709645141,0.00013852279516075237,1804757.1138734317,451389,2013,controlled offline execution time of the Hamilton comparator
+207,Hamilton,7,0.24966729385778308,1805.556,8.296634184410223,0.00013827723640683705,1807962.080356119,451389,2013,controlled offline execution time of the Hamilton comparator
+208,Hamilton,1,0.18677899800240993,1805.556,6.206808251942668,0.00010344680419904446,2416701.046839195,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,2,0.1874460179824382,1805.556,6.228973833515156,0.00010381623055858595,2408101.3022228647,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,3,0.18667710316367447,1805.556,6.203422208904331,0.00010339037014840552,2418020.1661059195,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,4,0.1872087351512164,1805.556,6.221088744449346,0.00010368481240748909,2411153.516076021,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,5,0.18642876204103231,1805.556,6.1951696443987,0.000103252827406645,2421241.20258145,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,6,0.18648403603583574,1805.556,6.1970064413123405,0.00010328344068853901,2420523.5450462834,451389,2132,controlled offline execution time of the Hamilton comparator
+208,Hamilton,7,0.18149843299761415,1805.556,6.03133105805461,0.00010052218430091016,2487013.2074690345,451389,2132,controlled offline execution time of the Hamilton comparator
+209,Hamilton,1,0.19780141697265208,1805.556,6.573091622945577,0.00010955152704909295,2282031.1750466824,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,2,0.1975476259831339,1805.556,6.56465795521603,0.00010941096592026716,2284962.9184535905,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,3,0.1953298058360815,1805.556,6.490958103855482,0.00010818263506425805,2310906.920057046,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,4,0.19725059298798442,1805.556,6.554787322729987,0.00010924645537883312,2288403.7668140065,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,5,0.19705782504752278,1805.556,6.548381497362234,0.0001091396916227039,2290642.3527771216,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,6,0.1975184439215809,1805.556,6.56368821310159,0.00010939480355169316,2285300.506818549,451389,3006,controlled offline execution time of the Hamilton comparator
+209,Hamilton,7,0.1974331031087786,1805.556,6.5608522729434675,0.00010934753788239113,2286288.3320600027,451389,3006,controlled offline execution time of the Hamilton comparator
+210,Hamilton,1,0.22065728483721614,1805.556,7.332609506563611,0.00012221015844272686,2045656.4592145681,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,2,0.22136818896979094,1805.556,7.356233391923294,0.00012260388986538824,2039087.0165252103,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,3,0.22078336402773857,1805.556,7.336799214017352,0.0001222799869002892,2044488.2792133235,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,4,0.22130345203913748,1805.556,7.354082134449581,0.0001225680355741597,2039683.501729435,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,5,0.22016665898263454,1805.556,7.316305636024622,0.00012193842726707704,2050215.060199478,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,6,0.21391113894060254,1805.556,7.1084299442588055,0.00011847383240431342,2110170.6168061625,451389,2560,controlled offline execution time of the Hamilton comparator
+210,Hamilton,7,0.2209531960543245,1805.556,7.342442861511618,0.0001223740476918603,2042916.817048528,451389,2560,controlled offline execution time of the Hamilton comparator
+212,Hamilton,1,0.18368285009637475,1805.556,6.103920900699,0.00010173201501165001,2457436.8252842613,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,2,0.1833330460358411,1805.556,6.092296645548776,0.00010153827742581294,2462125.676522904,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,3,0.18297883891500533,1805.556,6.0805260733537585,0.00010134210122256265,2466891.814794347,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,4,0.18318521580658853,1805.556,6.0873841345243855,0.00010145640224207309,2464112.608719405,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,5,0.18372976989485323,1805.556,6.105480081310795,0.00010175800135517992,2456809.2599164825,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,6,0.1832171839196235,1805.556,6.088446459249898,0.00010147410765416497,2463682.6652571093,451389,2749,controlled offline execution time of the Hamilton comparator
+212,Hamilton,7,0.18361228005960584,1805.556,6.10157580466978,0.00010169293007782967,2458381.3231526027,451389,2749,controlled offline execution time of the Hamilton comparator
+213,Hamilton,1,0.14418727695010602,1805.556,4.791452946907413,7.985754911512355e-05,3130574.4136925256,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,2,0.14397430792450905,1805.556,4.784375824106559,7.973959706844265e-05,3135205.2078394406,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,3,0.14471941394731402,1805.556,4.80913626430797,8.01522710717995e-05,3119063.211272614,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,4,0.1444296850822866,1805.556,4.799508353624698,7.999180589374497e-05,3125320.1150637977,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,5,0.14389048190787435,1805.556,4.781590221777924,7.969317036296539e-05,3137031.6786415456,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,6,0.1443301539402455,1805.556,4.796200858026409,7.993668096710682e-05,3127475.358939066,451389,3235,controlled offline execution time of the Hamilton comparator
+213,Hamilton,7,0.14143259800039232,1805.556,4.699912868957561,7.83318811492927e-05,3191548.5282872897,451389,3235,controlled offline execution time of the Hamilton comparator
+214,Hamilton,1,0.2195138360839337,1805.556,7.294611834269346,0.00012157686390448909,2056312.2947175233,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,2,0.21997130988165736,1805.556,7.309814036728543,0.00012183023394547572,2052035.7870435163,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,3,0.21940876287408173,1805.556,7.291120171539904,0.00012151866952566508,2057297.0472425993,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,4,0.21985162305645645,1805.556,7.305836752439352,0.00012176394587398919,2053152.9116075085,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,5,0.22006322583183646,1805.556,7.31286847370571,0.00012188114122842851,2051178.6932766924,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,6,0.21964533790014684,1805.556,7.298981739701682,0.0001216496956616947,2055081.179119797,451389,2257,controlled offline execution time of the Hamilton comparator
+214,Hamilton,7,0.22003742679953575,1805.556,7.312011152227981,0.00012186685253713301,2051419.1906599426,451389,2257,controlled offline execution time of the Hamilton comparator
+215,Hamilton,1,0.18758186604827642,1805.556,6.233488168130252,0.00010389146946883753,2406357.338847614,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,2,0.1847341728862375,1805.556,6.138857157116284,0.00010231428595193807,2443451.54417084,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,3,0.1862140849698335,1805.556,6.1880357619425865,0.00010313392936570979,2424032.532625685,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,4,0.187792464857921,1805.556,6.240486526851153,0.00010400810878085254,2403658.7428654786,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,5,0.18766190600581467,1805.556,6.236147956833729,0.00010393579928056215,2405330.9998141755,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,6,0.18883979390375316,1805.556,6.275290068114857,0.00010458816780191429,2390327.7517346875,451389,3360,controlled offline execution time of the Hamilton comparator
+215,Hamilton,7,0.18846754892729223,1805.556,6.26292008424969,0.0001043820014041615,2395048.9225820974,451389,3360,controlled offline execution time of the Hamilton comparator
+217,Hamilton,1,0.1958525339141488,1805.556,6.508328755712328,0.0001084721459285388,2304739.1370379953,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,2,0.19630953506566584,1805.556,6.523515251778372,0.0001087252541963062,2299373.7917468436,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,3,0.19605698995292187,1805.556,6.515122985482207,0.00010858538309137011,2302335.6632599006,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,4,0.19598702806979418,1805.556,6.51279809886132,0.00010854663498102201,2303157.532646768,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,5,0.19552046596072614,1805.556,6.497293884899482,0.00010828823141499135,2308653.4587671743,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,6,0.19580695312470198,1805.556,6.50681407138971,0.00010844690118982849,2305275.644182705,451389,2203,controlled offline execution time of the Hamilton comparator
+217,Hamilton,7,0.19613850815221667,1805.556,6.517831897284271,0.00010863053162140453,2301378.7769288616,451389,2203,controlled offline execution time of the Hamilton comparator
+219,Hamilton,1,0.17556046298705041,1805.556,5.834007795506218,9.723346325843696e-05,2571131.2918632203,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,2,0.17524526710622013,1805.556,5.823533596506122,9.705889327510203e-05,2575755.72484022,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,3,0.1754637889098376,1805.556,5.830795242346544,9.717992070577572e-05,2572547.8903909177,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,4,0.1744987890124321,1805.556,5.798727561341728,9.664545935569547e-05,2586774.39857672,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,5,0.17471836507320404,1805.556,5.8060242409497365,9.67670706824956e-05,2583523.4882771233,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,6,0.17512647691182792,1805.556,5.8195861079410856,9.699310179901809e-05,2577502.887968584,451389,2135,controlled offline execution time of the Hamilton comparator
+219,Hamilton,7,0.1756334719248116,1805.556,5.836433938071539,9.727389896785899e-05,2570062.500348674,451389,2135,controlled offline execution time of the Hamilton comparator
+220,Hamilton,1,0.19068581308238208,1805.556,6.336634690335234,0.0001056105781722539,2367187.1163534657,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,2,0.1912174711469561,1805.556,6.354302092439871,0.00010590503487399786,2360605.4263372966,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,3,0.19154869904741645,1805.556,6.365309047653458,0.00010608848412755763,2356523.4441412836,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,4,0.19156830105930567,1805.556,6.365960437426665,0.00010609934062377775,2356282.315518678,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,5,0.1925851518753916,1805.556,6.399751163920419,0.00010666251939867365,2343841.130037181,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,6,0.19014428299851716,1805.556,6.318639233516451,0.00010531065389194084,2373928.8548765895,451389,2048,controlled offline execution time of the Hamilton comparator
+220,Hamilton,7,0.18623023084364831,1805.556,6.188572301617285,0.00010314287169362141,2423822.372743385,451389,2048,controlled offline execution time of the Hamilton comparator
+221,Hamilton,1,0.23709526285529137,1805.556,7.878856026242045,0.0001313142671040341,1903829.68670066,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,2,0.23603422893211246,1805.556,7.843597061473998,0.00013072661769123332,1912387.8856139435,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,3,0.23706087097525597,1805.556,7.877713157894497,0.00013129521929824162,1904105.8869943798,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,4,0.23639962682500482,1805.556,7.855739511541203,0.00013092899185902006,1909431.948190601,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,5,0.2365531858522445,1805.556,7.860842394882612,0.0001310140399147102,1908192.4361904217,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,6,0.2365360581316054,1805.556,7.8602732276907075,0.00013100455379484513,1908330.6095718117,451389,2409,controlled offline execution time of the Hamilton comparator
+221,Hamilton,7,0.237705172970891,1805.556,7.899123803556057,0.00013165206339260093,1898944.7909712775,451389,2409,controlled offline execution time of the Hamilton comparator
+222,Hamilton,1,0.2458235709927976,1805.556,8.16890434833805,0.00013614840580563416,1836231.563055543,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,2,0.24468697095289826,1805.556,8.131134264001723,0.00013551890440002872,1844761.0767427885,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,3,0.24544736882671714,1805.556,8.156402864050202,0.00013594004773417005,1839045.9924574508,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,4,0.2460089260712266,1805.556,8.175063838658893,0.0001362510639776482,1834848.0569737945,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,5,0.24472890608012676,1805.556,8.132527800194293,0.0001355421300032382,1844444.970682011,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,6,0.24663071194663644,1805.556,8.195726256509456,0.0001365954376084909,1830222.1829439765,451389,2489,controlled offline execution time of the Hamilton comparator
+222,Hamilton,7,0.24589895200915635,1805.556,8.17140931688044,0.00013619015528134066,1835668.6610977992,451389,2489,controlled offline execution time of the Hamilton comparator
+223,Hamilton,1,0.17178158299066126,1805.556,5.708432737306223,9.51405456217704e-05,2627691.468092591,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,2,0.17085149697959423,1805.556,5.677525271315679,9.462542118859466e-05,2641996.1661437005,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,3,0.1739237350411713,1805.556,5.779618080231396,9.63269680038566e-05,2595327.1984019144,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,4,0.17503339401446283,1805.556,5.816492892420822,9.69415482070137e-05,2578873.6060428685,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,5,0.17502635810524225,1805.556,5.816259083802737,9.693765139671228e-05,2578977.274546172,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,6,0.17398360115475953,1805.556,5.781607476747092,9.636012461245152e-05,2594434.170830196,451389,2592,controlled offline execution time of the Hamilton comparator
+223,Hamilton,7,0.17066180100664496,1805.556,5.671221529766287,9.452035882943811e-05,2644932.8281870442,451389,2592,controlled offline execution time of the Hamilton comparator
+228,Hamilton,1,0.21983232605271041,1805.556,7.305195498318869,0.00012175325830531449,2053333.1385110666,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,2,0.22365347016602755,1805.556,7.432175025289524,0.0001238695837548254,2018251.7162148864,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,3,0.22508105402812362,1805.556,7.479614723490945,0.00012466024539151574,2005450.8894542472,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,4,0.22590823494829237,1805.556,7.507102574994928,0.00012511837624991546,1998107.771960227,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,5,0.22527780896052718,1805.556,7.486153039635232,0.00012476921732725387,2003699.352736033,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,6,0.22512467904016376,1805.556,7.481064415841893,0.00012468440693069822,2005062.270047564,451389,2058,controlled offline execution time of the Hamilton comparator
+228,Hamilton,7,0.2241849370766431,1805.556,7.4498360752026445,0.00012416393458671075,2013467.1217704588,451389,2058,controlled offline execution time of the Hamilton comparator
+230,Hamilton,1,0.18104045116342604,1805.556,6.016111973157057,0.00010026853288595094,2493304.6570488773,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,2,0.18223196710459888,1805.556,6.055706954686497,0.00010092844924477495,2477002.2909367396,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,3,0.18134536198340356,1805.556,6.02624439175756,0.00010043740652929267,2489112.459580358,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,4,0.18126097391359508,1805.556,6.0234401119742085,0.00010039066853290348,2490271.293671696,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,5,0.18161571095697582,1805.556,6.035228293898693,0.00010058713823164489,2485407.223975973,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,6,0.18179810303263366,1805.556,6.041289321382455,0.00010068815535637424,2482913.696404046,451389,2256,controlled offline execution time of the Hamilton comparator
+230,Hamilton,7,0.1814525700174272,1805.556,6.029806996318936,0.00010049678327198226,2487641.81161307,451389,2256,controlled offline execution time of the Hamilton comparator
+231,Hamilton,1,0.19733563414774835,1805.556,6.557613305189593,0.00010929355508649322,2287417.586537046,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,2,0.19746640184894204,1805.556,6.561958815421135,0.00010936598025701892,2285902.7954806397,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,3,0.19772185408510268,1805.556,6.570447687640904,0.00010950746146068174,2282949.4599302863,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,4,0.1977622341364622,1805.556,6.571789547478855,0.00010952982579131426,2282483.3162459484,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,5,0.19761555991135538,1805.556,6.566915451352005,0.00010944859085586677,2284177.421061783,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,6,0.1980503450613469,1805.556,6.581363692779849,0.00010968939487966415,2279162.906079161,451389,1610,controlled offline execution time of the Hamilton comparator
+231,Hamilton,7,0.1972036969382316,1805.556,6.55322893130642,0.00010922048218844034,2288947.960957267,451389,1610,controlled offline execution time of the Hamilton comparator
+232,Hamilton,1,0.2087850389070809,1805.556,6.938085738921891,0.00011563476231536484,2161979.624415949,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,2,0.20720200589857996,1805.556,6.885480347280725,0.00011475800578801209,2178497.2497850396,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,3,0.20912595093250275,1805.556,6.949414504978059,0.00011582357508296765,2158455.217954704,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,4,0.2077659028582275,1805.556,6.9042190724040955,0.0001150703178734016,2172584.595404053,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,5,0.2099867300130427,1805.556,6.978018848921086,0.00011630031414868478,2149607.2631445015,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,6,0.21056211297400296,1805.556,6.99713926260951,0.00011661898771015851,2143733.236832263,451389,1785,controlled offline execution time of the Hamilton comparator
+232,Hamilton,7,0.20735880709253252,1805.556,6.890690970289457,0.00011484484950482429,2176849.9073134162,451389,1785,controlled offline execution time of the Hamilton comparator
+233,Hamilton,1,0.16169028892181814,1805.556,5.373091355410238,8.955152259017064e-05,2791688.9938780395,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,2,0.16020408901385963,1805.556,5.323703801395015,8.872839668991691e-05,2817587.258718155,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,3,0.16192138707265258,1805.556,5.38077092283992,8.967951538066533e-05,2787704.6272921693,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,4,0.16165678505785763,1805.556,5.371977996512685,8.953296660854475e-05,2792267.5799747347,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,5,0.16144687007181346,1805.556,5.3650023617704505,8.941670602950751e-05,2795898.1168183493,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,6,0.1621592720039189,1805.556,5.388676020148438,8.981126700247396e-05,2783615.1113769882,451389,3062,controlled offline execution time of the Hamilton comparator
+233,Hamilton,7,0.15758796781301498,1805.556,5.23676810288958,8.7279468381493e-05,2864362.084645909,451389,3062,controlled offline execution time of the Hamilton comparator
+234,Hamilton,1,0.17972284904681146,1805.556,5.972327052059691,9.953878420099485e-05,2511583.8213895056,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,2,0.1813992951065302,1805.556,6.02803663048491,0.00010046727717474848,2488372.4037346076,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,3,0.18140632007271051,1805.556,6.0282700754574385,0.00010047116792429064,2488276.0414249967,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,4,0.1814363959711045,1805.556,6.0292695204503595,0.00010048782534083933,2487863.5710548838,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,5,0.18121150601655245,1805.556,6.021796256107895,0.00010036327093513159,2490951.0986502627,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,6,0.17791055305860937,1805.556,5.912103077122262,9.853505128537103e-05,2537168.2131261667,451389,2750,controlled offline execution time of the Hamilton comparator
+234,Hamilton,7,0.1809849338606,1805.556,6.0142670909326545,0.00010023778484887758,2494069.480654524,451389,2750,controlled offline execution time of the Hamilton comparator

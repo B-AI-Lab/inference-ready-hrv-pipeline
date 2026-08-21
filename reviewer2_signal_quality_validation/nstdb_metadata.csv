@@ -1,0 +1,16 @@
+record,fs,sig_len,duration_s,n_sig,sig_names,source_record,snr_label,noise_type,reference_annotations
+118e00,360.0,650000,1805.5555555555557,2,MLII|V1,118,0,electrode motion artifact,atr copy of clean MIT-BIH source
+118e06,360.0,650000,1805.5555555555557,2,MLII|V1,118,6,electrode motion artifact,atr copy of clean MIT-BIH source
+118e12,360.0,650000,1805.5555555555557,2,MLII|V1,118,12,electrode motion artifact,atr copy of clean MIT-BIH source
+118e18,360.0,650000,1805.5555555555557,2,MLII|V1,118,18,electrode motion artifact,atr copy of clean MIT-BIH source
+118e24,360.0,650000,1805.5555555555557,2,MLII|V1,118,24,electrode motion artifact,atr copy of clean MIT-BIH source
+118e_6,360.0,650000,1805.5555555555557,2,MLII|V1,118,-6,electrode motion artifact,atr copy of clean MIT-BIH source
+119e00,360.0,650000,1805.5555555555557,2,MLII|V1,119,0,electrode motion artifact,atr copy of clean MIT-BIH source
+119e06,360.0,650000,1805.5555555555557,2,MLII|V1,119,6,electrode motion artifact,atr copy of clean MIT-BIH source
+119e12,360.0,650000,1805.5555555555557,2,MLII|V1,119,12,electrode motion artifact,atr copy of clean MIT-BIH source
+119e18,360.0,650000,1805.5555555555557,2,MLII|V1,119,18,electrode motion artifact,atr copy of clean MIT-BIH source
+119e24,360.0,650000,1805.5555555555557,2,MLII|V1,119,24,electrode motion artifact,atr copy of clean MIT-BIH source
+119e_6,360.0,650000,1805.5555555555557,2,MLII|V1,119,-6,electrode motion artifact,atr copy of clean MIT-BIH source
+bw,360.0,650000,1805.5555555555557,2,noise1|noise2,,,baseline wander,
+em,360.0,650000,1805.5555555555557,2,noise1|noise2,,,electrode motion,
+ma,360.0,650000,1805.5555555555557,2,noise1|noise2,,,muscle artifact,

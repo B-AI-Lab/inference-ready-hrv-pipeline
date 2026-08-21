@@ -1,0 +1,3 @@
+Detector,TP,FP,FN,Sensitivity,PPV,F1,Median timing error ms,FP/h,Runtime source,Offline runtime,Runtime IQR,ms/min ECG,Real-time factor
+Embedded Pan-Tompkins firmware replay,107641,1405,1853,0.9830766982665716,0.9871155292261982,0.9850919740093348,86.00000000001273,58.36153846153843,controlled offline execution time of the firmware-equivalent implementation,0.3146 s/record,0.0052 s/record,10.4547,0.00017424471689239998
+Hamilton,107485,1395,2009,0.9816519626646208,0.9871877296105804,0.984412063707218,61.55555555551473,57.94615384615381,controlled offline execution time of the Hamilton comparator,0.2053 s/record,0.0398 s/record,6.8220,0.00011369971237005

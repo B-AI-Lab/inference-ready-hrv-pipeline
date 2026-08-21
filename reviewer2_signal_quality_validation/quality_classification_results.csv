@@ -1,0 +1,23 @@
+analysis_population,quality_method,target,TP,FP,TN,FN,sensitivity_for_degraded,specificity_for_intact,PPV_degraded,NPV_intact,balanced_accuracy,F1_degraded,MCC,AUROC_for_degraded,AUPRC_for_degraded
+primary_clean_source_plus_noise_exposed,Signal Status: non-Active predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,422.0,332.0,476.0,66.0,0.8647540983606558,0.5891089108910891,0.5596816976127321,0.8782287822878229,0.7269315046258724,0.679549114331723,0.4458153969868488,,
+primary_clean_source_plus_noise_exposed,Signal Status: Low Confidence/Lost predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,244.0,177.0,631.0,244.0,0.5,0.780940594059406,0.5795724465558195,0.7211428571428572,0.6404702970297029,0.5368536853685368,0.29065982877559965,,
+primary_clean_source_plus_noise_exposed,Orphanidou SQI: unacceptable predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,485.0,589.0,219.0,3.0,0.9938524590163934,0.27103960396039606,0.4515828677839851,0.9864864864864865,0.6324460314883947,0.6209987195902689,0.34064805148366145,,
+primary_clean_source_plus_noise_exposed,Signal Confidence continuous,strict RR integrity: degraded = FP>0 or FN>0,,,,,,,,,,,,0.7544927264242818,0.5450155668460033
+primary_clean_source_plus_noise_exposed,Orphanidou SQI continuous,strict RR integrity: degraded = FP>0 or FN>0,,,,,,,,,,,,0.6616595317318618,0.33605857166543357
+primary_clean_source_plus_noise_exposed,Signal Confidence continuous,secondary degraded = R-peak F1 < 0.95,,,,,,,,,,,,0.765133074415161,0.5305944696675513
+primary_clean_source_plus_noise_exposed,Orphanidou SQI continuous,secondary degraded = R-peak F1 < 0.95,,,,,,,,,,,,0.6599841531687168,0.31520732701881266
+primary_clean_source_plus_noise_exposed,Signal Confidence continuous,secondary degraded = R-peak F1 < 0.98,,,,,,,,,,,,0.7544927264242818,0.5450155668460033
+primary_clean_source_plus_noise_exposed,Orphanidou SQI continuous,secondary degraded = R-peak F1 < 0.98,,,,,,,,,,,,0.6616595317318618,0.33605857166543357
+primary_clean_source_plus_noise_exposed,Signal Confidence continuous,secondary degraded = more than one beat error,,,,,,,,,,,,0.765133074415161,0.5305944696675513
+primary_clean_source_plus_noise_exposed,Orphanidou SQI continuous,secondary degraded = more than one beat error,,,,,,,,,,,,0.6599841531687168,0.31520732701881266
+sensitivity_all_windows,Signal Status: non-Active predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,559.0,862.0,1033.0,66.0,0.8944,0.5451187335092348,0.39338494018296977,0.9399454049135578,0.7197593667546174,0.5464320625610948,0.3827596257666448,,
+sensitivity_all_windows,Signal Status: Low Confidence/Lost predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,368.0,483.0,1412.0,257.0,0.5888,0.7451187335092349,0.43243243243243246,0.8460155781905333,0.6669593667546174,0.4986449864498645,0.3049245924083308,,
+sensitivity_all_windows,Orphanidou SQI: unacceptable predicts degraded,strict RR integrity: degraded = FP>0 or FN>0,573.0,1263.0,632.0,52.0,0.9168,0.33350923482849604,0.31209150326797386,0.9239766081871345,0.6251546174142479,0.4656643640796424,0.2430844058053422,,
+sensitivity_all_windows,Signal Confidence continuous,strict RR integrity: degraded = FP>0 or FN>0,,,,,,,,,,,,0.7401878627968338,0.38231897602493387
+sensitivity_all_windows,Orphanidou SQI continuous,strict RR integrity: degraded = FP>0 or FN>0,,,,,,,,,,,,0.6344907651715039,0.2463651256046378
+sensitivity_all_windows,Signal Confidence continuous,secondary degraded = R-peak F1 < 0.95,,,,,,,,,,,,0.7511319926231668,0.3730660514432773
+sensitivity_all_windows,Orphanidou SQI continuous,secondary degraded = R-peak F1 < 0.95,,,,,,,,,,,,0.6386642662685519,0.23182389855550242
+sensitivity_all_windows,Signal Confidence continuous,secondary degraded = R-peak F1 < 0.98,,,,,,,,,,,,0.7401878627968338,0.38231897602493387
+sensitivity_all_windows,Orphanidou SQI continuous,secondary degraded = R-peak F1 < 0.98,,,,,,,,,,,,0.6344907651715039,0.2463651256046378
+sensitivity_all_windows,Signal Confidence continuous,secondary degraded = more than one beat error,,,,,,,,,,,,0.7511319926231668,0.3730660514432773
+sensitivity_all_windows,Orphanidou SQI continuous,secondary degraded = more than one beat error,,,,,,,,,,,,0.6386642662685519,0.23182389855550242

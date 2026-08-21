@@ -1,0 +1,10 @@
+check,passed
+serial_parser_accepts_revised_rr_format,True
+hrv_engine_payloads_generated,True
+payload_contains_sample,True
+payload_json_serializable,True
+sse_handler_constructible,True
+event_annotation_code_unchanged,True
+dashboard_code_unchanged,True
+export_logic_unchanged,True
+csv_export_logic_unchanged,True

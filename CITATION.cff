@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "A real-time infrastructure transforming HRV streams into inference-ready, context-aware data objects for digital biomarker development"
+authors:
+  - family-names: "Gellisch"
+    given-names: "Morris"
+    email: "morris.gellisch@ruhr-uni-bochum.de"
+  - family-names: "Marcus"
+    given-names: "Katrin"
+  - family-names: "Zahn"
+    given-names: "Peter"
+  - family-names: "Selke"
+    given-names: "Hendrik"
+  - family-names: "Förster"
+    given-names: "Eckart"
+  - family-names: "Burr"
+    given-names: "Boris"
+  - family-names: "Schäfer"
+    given-names: "Thorsten"
+contact:
+  - family-names: "Gellisch"
+    given-names: "Morris"
+    email: "morris.gellisch@ruhr-uni-bochum.de"
+license: "MIT"
+type: software
